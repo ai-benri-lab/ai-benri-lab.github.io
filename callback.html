@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Benri Lab - Authorization</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png"></head>
+<body>
+<header><a href="./">AI Benri Lab</a></header>
+<main>
+<h1>TikTok 連携</h1>
+<div class="box" id="ok" style="display:none">
+  <p>認可が完了しました。以下のコードをコピーして、設定ツールに貼り付けてください。</p>
+  <p><code id="code" style="word-break:break-all"></code></p>
+  <button id="copy">コピー</button>
+  <p class="muted">state: <span id="state"></span></p>
+</div>
+<div class="box" id="ng" style="display:none"><p>認可がキャンセルまたは失敗しました。</p><p class="muted" id="err"></p></div>
+<div class="box" id="none" style="display:none"><p>このページはTikTokログイン後に自動で開かれるページです。</p></div>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  function show(id){ document.getElementById(id).style.display = ''; }
+  if (q.get('code')) {
+    show('ok');
+    document.getElementById('code').textContent = q.get('code');
+    document.getElementById('state').textContent = q.get('state') || '';
+    document.getElementById('copy').onclick = function(){ navigator.clipboard.writeText(q.get('code')); };
+  } else if (q.get('error')) {
+    show('ng');
+    document.getElementById('err').textContent = q.get('error') + ' ' + (q.get('error_description') || '');
+  } else {
+    show('none');
+  }
+})();
+</script>
+</main>
+<footer>© 2026 AI Benri Lab</footer>
+</body></html>
