@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SwitchBot人感センサー 仕様と特徴</title>
+<meta name="description" content="SwitchBot人感センサーは人の動きを検知して照明や家電を自動オンオフ。工事不要の電池式で最大約9メートルの検知範囲、ハブ連携による自動化に対応するモデルの特徴と確認点を紹介します。">
+<link rel="canonical" href="https://ai-benri-lab.github.io/blog/switchbot_motion_sensor.html">
+<meta property="og:type" content="article"><meta property="og:title" content="SwitchBot人感センサー 仕様と特徴"><meta property="og:description" content="SwitchBot人感センサーは人の動きを検知して照明や家電を自動オンオフ。工事不要の電池式で最大約9メートルの検知範囲、ハブ連携による自動化に対応するモデルの特徴と確認点を紹介します。"><meta property="og:url" content="https://ai-benri-lab.github.io/blog/switchbot_motion_sensor.html"><meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "SwitchBot 人感センサーで照明・家電を自動化する仕組みと仕様", "description": "SwitchBot人感センサーは人の動きを検知して照明や家電を自動オンオフ。工事不要の電池式で最大約9メートルの検知範囲、ハブ連携による自動化に対応するモデルの特徴と確認点を紹介します。", "inLanguage": "ja", "author": {"@type": "Organization", "name": "AIべんりラボ"}, "publisher": {"@type": "Organization", "name": "AIべんりラボ", "url": "https://ai-benri-lab.github.io"}, "url": "https://ai-benri-lab.github.io/blog/switchbot_motion_sensor.html", "datePublished": "2026-08-27", "dateModified": "2026-08-27", "about": {"@type": "Thing", "name": "人感センサーの仕様紹介"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "工事や配線は必要ですか", "acceptedAnswer": {"@type": "Answer", "text": "電池式で配線不要とされ、工事を伴わず貼り付けや設置で導入できると案内されています。賃貸でも使いやすい仕様です。"}}, {"@type": "Question", "name": "検知できる範囲はどのくらいですか", "acceptedAnswer": {"@type": "Answer", "text": "メーカー公開情報では、検知範囲はおよそ9メートル先まで届くとされています。設置環境により条件は異なります。"}}, {"@type": "Question", "name": "家電の自動化にも使えますか", "acceptedAnswer": {"@type": "Answer", "text": "SwitchBotハブと連携することで、照明だけでなく家電の自動化にも対応できるとされています。対応可否は事前に確認が必要です。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-benri-lab.github.io/"}, {"@type": "ListItem", "position": 2, "name": "レビュー記事", "item": "https://ai-benri-lab.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "SwitchBot 人感センサーで照明・家電を自動化する仕組みと仕様", "item": "https://ai-benri-lab.github.io/blog/switchbot_motion_sensor.html"}]}
+</script>
+<style>
+:root{--ink:#1f2933;--muted:#5b6b80;--brand:#1f4e79;--accent:#2e75b6;--line:#dce3ec;--bg:#fff;--soft:#f4f7fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--bg);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,system-ui,sans-serif;line-height:1.85;font-size:17px}
+.col-wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+.col-bc{font-size:13px;color:var(--muted);padding:18px 0}
+.col-bc a{color:var(--muted);text-decoration:none}.col-bc a:hover{text-decoration:underline}
+.col-hero h1{font-size:30px;line-height:1.45;color:var(--brand);margin:.2em 0 .5em;font-weight:800}
+.col-lead{background:var(--soft);border-left:5px solid var(--accent);padding:18px 20px;border-radius:8px;font-size:17px;margin:18px 0 30px}
+.col-body h2{font-size:23px;color:var(--brand);border-bottom:2px solid var(--line);padding-bottom:8px;margin:48px 0 16px;font-weight:800}
+.col-body h3{font-size:19px;color:var(--accent);margin:28px 0 10px;font-weight:700}
+.col-body p{margin:12px 0}
+.col-figure{margin:22px 0;text-align:center}
+.col-figure img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.col-figure figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.col-figure.is-right,.col-figure.is-left{max-width:42%;margin:6px 0}
+.col-figure.is-right{float:right;margin-left:24px}
+.col-figure.is-left{float:left;margin-right:24px}
+@media(max-width:680px){.col-figure.is-right,.col-figure.is-left{float:none;max-width:100%;margin:18px 0}}
+.col-table-wrap{overflow-x:auto;margin:20px 0}
+.col-table{border-collapse:collapse;width:100%;font-size:15.5px}
+.col-table caption{text-align:left;color:var(--muted);font-size:13px;margin-bottom:6px}
+.col-table th,.col-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.col-table thead th{background:var(--brand);color:#fff;font-weight:700}
+.col-table tbody tr:nth-child(even){background:var(--soft)}
+.col-faq{margin:46px 0 10px}
+.col-faq__item{border:1px solid var(--line);border-radius:8px;margin:10px 0;overflow:hidden}
+.col-faq__item summary{cursor:pointer;padding:14px 16px;font-weight:700;background:var(--soft);list-style:none}
+.col-faq__item summary::-webkit-details-marker{display:none}
+.col-faq__item summary::before{content:"Q ";color:var(--accent);font-weight:800}
+.col-faq__a{padding:6px 16px 14px}.col-faq__a p{margin:6px 0}
+.col-related{margin:40px 0 0;padding:18px 20px;background:var(--soft);border-radius:10px}
+.col-related h2{font-size:17px;color:var(--brand);margin:0 0 10px;border:0;padding:0}
+.col-related a{color:var(--accent);text-decoration:none;margin-right:14px;white-space:nowrap}
+.col-related a:hover{text-decoration:underline}
+.col-cta{margin:34px 0;text-align:center}
+.col-cta a{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 28px;border-radius:30px;font-weight:700}
+</style>
+</head>
+<body>
+<main class="col-wrap">
+<nav class="col-bc"><a href="/">ホーム</a> &gt; <a href="/blog/">レビュー記事</a> &gt; SwitchBot 人感センサーで照明・家電を自動化する仕組みと仕様</nav>
+<header class="col-hero"><h1>SwitchBot 人感センサーで照明・家電を自動化する仕組みと仕様</h1></header>
+<figure class="col-figure"><img src="https://i.ytimg.com/vi/CRb64CQfN7o/hqdefault.jpg" alt="SwitchBot 人感センサー の検証動画サムネイル" loading="lazy"><figcaption>SwitchBot 人感センサー</figcaption></figure>
+<div class="col-lead"><p>照明の消し忘れや手動操作の手間を、人の動きの検知で解決するのがSwitchBot人感センサーです。人が入れば点灯、いなくなれば消灯という自動制御を、工事不要の電池式で実現します。ハブ連携により家電の自動化にも対応する製品として紹介します。</p></div>
+<article class="col-body">
+<h2>30秒でわかる検証動画</h2>
+<div style="text-align:center"><iframe src="https://www.youtube.com/embed/CRb64CQfN7o" title="SwitchBot 人感センサー" allowfullscreen loading="lazy" style="width:100%;max-width:340px;aspect-ratio:9/16;border:0;border-radius:12px"></iframe></div>
+<h2>人の動きを検知して自動でオンオフする仕組み</h2>
+<p>SwitchBot人感センサーは、人の動きを検知して照明や家電を自動でオンにし、動きがなくなると自動でオフにする制御に対応するとされています。検知範囲はメーカー公開情報でおよそ9メートル先までとされ、玄関や廊下、トイレなど短時間の在室が多い場所での自動点灯・消灯の用途が想定されています。手動スイッチの操作を介さず、動きの有無に応じた制御を行える点が特徴として挙げられています。</p>
+<h2>消し忘れや防犯といった悩みへの対応</h2>
+<p>照明や家電の消し忘れは、動きがなくなると自動でオフにする動作により抑えやすくなるとされています。また人の動きを検知する特性を生かし、不在時の動き検知をきっかけとした通知や連動動作の設定にも活用できるとされ、防犯対策の補助としての用途が案内されています。日常の切り忘れと、留守中の見守りという二つの悩みに対して、同一のセンサーで対応できる構成が示されています。</p>
+<h2>設置方式・電源・連携の確認点</h2>
+<p>本体は電池式で配線が不要とされ、工事を伴わず貼り付けや設置で導入できるため、賃貸住宅でも使いやすいと案内されています。設置場所の自由度が高い一方、電池式のため電池残量の管理は必要です。照明や家電の自動化にはSwitchBotハブとの連携が前提となる機能があるため、連携させたい家電や既存製品が対応するか、購入前に公開仕様で確認しておくことがすすめられます。</p>
+<h2>検証方法と情報の出典</h2>
+<p>本記事および検証動画は、メーカーが公開している製品仕様・公式画像に基づいて構成しています。個人の使用体験ではなく、公開情報の整理・検証です。</p><p>製品情報の出典: <a href="https://www.switchbot.jp/products/switchbot-motion-sensor" rel="noopener" target="_blank">メーカー公式ページ</a></p>
+<h2>まとめ</h2>
+<p>SwitchBot人感センサーは、人の動きの検知で照明や家電を自動オンオフし、消し忘れや防犯対策の補助に活用できる製品です。工事不要の電池式で設置場所を選ばず、検知範囲はおよそ9メートルとされます。ハブ連携での家電自動化を含め、公開仕様を確認して導入を検討するとよいでしょう。</p><a href="https://a.r10.to/h5tmpK" rel="sponsored noopener" target="_blank" style="display:block;text-align:center;background:#bf0000;color:#fff;font-weight:700;text-decoration:none;border-radius:10px;padding:13px;margin:14px 0">楽天で価格を見る</a><a href="../links.html" style="display:block;text-align:center;border:2px solid #2f8f3a;color:#2f8f3a;font-weight:700;text-decoration:none;border-radius:10px;padding:12px;margin:8px 0">紹介した全商品のリンクまとめ</a><p style="font-size:.8rem;color:#7a5a10;background:#fff7e6;border:1px solid #ffe1a8;border-radius:8px;padding:8px 12px">※本記事はアフィリエイト広告（PR）を含みます。</p>
+<section class="col-faq"><h2>よくある質問</h2><details class="col-faq__item"><summary>工事や配線は必要ですか</summary><div class="col-faq__a"><p>電池式で配線不要とされ、工事を伴わず貼り付けや設置で導入できると案内されています。賃貸でも使いやすい仕様です。</p></div></details><details class="col-faq__item"><summary>検知できる範囲はどのくらいですか</summary><div class="col-faq__a"><p>メーカー公開情報では、検知範囲はおよそ9メートル先まで届くとされています。設置環境により条件は異なります。</p></div></details><details class="col-faq__item"><summary>家電の自動化にも使えますか</summary><div class="col-faq__a"><p>SwitchBotハブと連携することで、照明だけでなく家電の自動化にも対応できるとされています。対応可否は事前に確認が必要です。</p></div></details></section>
+</article>
+<div class="col-cta"><a href="/links.html">SwitchBot 人感センサーの製品情報を見る</a></div>
+<aside class="col-related"><h2>関連リンク</h2><a href="./switchbot_strip_light.html">SwitchBot LEDテープライトとは?1600万色の間接照明を解説</a><a href="./switchbot_blind_tilt.html">SwitchBot ブラインドポールで既存ブラインドを自動開閉</a><a href="./switchbot_air_purifier.html">SwitchBot 空気清浄機とは？家具になる1台の特徴</a></aside>
+</main>
+</body>
+</html>
