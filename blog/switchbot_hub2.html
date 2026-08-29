@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SwitchBotハブ2の特徴と仕様まとめ</title>
+<meta name="description" content="SwitchBotハブ2は赤外線家電のリモコンをスマホに集約し、室温や時刻の条件で自動化できるスマートリモコンです。アレクサ連携による音声操作や旧式家電への対応など、公開仕様をもとに特徴と確認点を紹介します。">
+<link rel="canonical" href="https://ai-benri-lab.github.io/blog/switchbot_hub2.html">
+<meta property="og:type" content="article"><meta property="og:title" content="SwitchBotハブ2の特徴と仕様まとめ"><meta property="og:description" content="SwitchBotハブ2は赤外線家電のリモコンをスマホに集約し、室温や時刻の条件で自動化できるスマートリモコンです。アレクサ連携による音声操作や旧式家電への対応など、公開仕様をもとに特徴と確認点を紹介します。"><meta property="og:url" content="https://ai-benri-lab.github.io/blog/switchbot_hub2.html"><meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "SwitchBotハブ2レビュー｜家中の家電をスマホで一括操作", "description": "SwitchBotハブ2は赤外線家電のリモコンをスマホに集約し、室温や時刻の条件で自動化できるスマートリモコンです。アレクサ連携による音声操作や旧式家電への対応など、公開仕様をもとに特徴と確認点を紹介します。", "inLanguage": "ja", "author": {"@type": "Organization", "name": "AIべんりラボ"}, "publisher": {"@type": "Organization", "name": "AIべんりラボ", "url": "https://ai-benri-lab.github.io"}, "url": "https://ai-benri-lab.github.io/blog/switchbot_hub2.html", "datePublished": "2026-08-25", "dateModified": "2026-08-25", "about": {"@type": "Thing", "name": "スマートリモコン紹介"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "旧式の家電でも使えますか", "acceptedAnswer": {"@type": "Answer", "text": "赤外線リモコンで操作できる家電であれば、旧式のモデルでも登録して使える場合が多いとされています。"}}, {"@type": "Question", "name": "音声で操作できますか", "acceptedAnswer": {"@type": "Answer", "text": "アレクサなどの音声アシスタントと連携することで、声による家電操作に対応するとされています。"}}, {"@type": "Question", "name": "自動で家電を動かせますか", "acceptedAnswer": {"@type": "Answer", "text": "室温や湿度、時刻などの条件を設定し、条件に応じて家電を自動で動作させる機能を備えています。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-benri-lab.github.io/"}, {"@type": "ListItem", "position": 2, "name": "レビュー記事", "item": "https://ai-benri-lab.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "SwitchBotハブ2レビュー｜家中の家電をスマホで一括操作", "item": "https://ai-benri-lab.github.io/blog/switchbot_hub2.html"}]}
+</script>
+<style>
+:root{--ink:#1f2933;--muted:#5b6b80;--brand:#1f4e79;--accent:#2e75b6;--line:#dce3ec;--bg:#fff;--soft:#f4f7fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--bg);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,system-ui,sans-serif;line-height:1.85;font-size:17px}
+.col-wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+.col-bc{font-size:13px;color:var(--muted);padding:18px 0}
+.col-bc a{color:var(--muted);text-decoration:none}.col-bc a:hover{text-decoration:underline}
+.col-hero h1{font-size:30px;line-height:1.45;color:var(--brand);margin:.2em 0 .5em;font-weight:800}
+.col-lead{background:var(--soft);border-left:5px solid var(--accent);padding:18px 20px;border-radius:8px;font-size:17px;margin:18px 0 30px}
+.col-body h2{font-size:23px;color:var(--brand);border-bottom:2px solid var(--line);padding-bottom:8px;margin:48px 0 16px;font-weight:800}
+.col-body h3{font-size:19px;color:var(--accent);margin:28px 0 10px;font-weight:700}
+.col-body p{margin:12px 0}
+.col-figure{margin:22px 0;text-align:center}
+.col-figure img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.col-figure figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.col-figure.is-right,.col-figure.is-left{max-width:42%;margin:6px 0}
+.col-figure.is-right{float:right;margin-left:24px}
+.col-figure.is-left{float:left;margin-right:24px}
+@media(max-width:680px){.col-figure.is-right,.col-figure.is-left{float:none;max-width:100%;margin:18px 0}}
+.col-table-wrap{overflow-x:auto;margin:20px 0}
+.col-table{border-collapse:collapse;width:100%;font-size:15.5px}
+.col-table caption{text-align:left;color:var(--muted);font-size:13px;margin-bottom:6px}
+.col-table th,.col-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.col-table thead th{background:var(--brand);color:#fff;font-weight:700}
+.col-table tbody tr:nth-child(even){background:var(--soft)}
+.col-faq{margin:46px 0 10px}
+.col-faq__item{border:1px solid var(--line);border-radius:8px;margin:10px 0;overflow:hidden}
+.col-faq__item summary{cursor:pointer;padding:14px 16px;font-weight:700;background:var(--soft);list-style:none}
+.col-faq__item summary::-webkit-details-marker{display:none}
+.col-faq__item summary::before{content:"Q ";color:var(--accent);font-weight:800}
+.col-faq__a{padding:6px 16px 14px}.col-faq__a p{margin:6px 0}
+.col-related{margin:40px 0 0;padding:18px 20px;background:var(--soft);border-radius:10px}
+.col-related h2{font-size:17px;color:var(--brand);margin:0 0 10px;border:0;padding:0}
+.col-related a{color:var(--accent);text-decoration:none;margin-right:14px;white-space:nowrap}
+.col-related a:hover{text-decoration:underline}
+.col-cta{margin:34px 0;text-align:center}
+.col-cta a{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 28px;border-radius:30px;font-weight:700}
+</style>
+</head>
+<body>
+<main class="col-wrap">
+<nav class="col-bc"><a href="/">ホーム</a> &gt; <a href="/blog/">レビュー記事</a> &gt; SwitchBotハブ2レビュー｜家中の家電をスマホで一括操作</nav>
+<header class="col-hero"><h1>SwitchBotハブ2レビュー｜家中の家電をスマホで一括操作</h1></header>
+<figure class="col-figure"><img src="https://i.ytimg.com/vi/X3UBDR8UmAo/hqdefault.jpg" alt="SwitchBot ハブ2（スマートリモコン） の検証動画サムネイル" loading="lazy"><figcaption>SwitchBot ハブ2（スマートリモコン）</figcaption></figure>
+<div class="col-lead"><p>SwitchBotハブ2は、家中の赤外線リモコンをスマホ1台に集約するスマートリモコンです。リモコンを探す手間や、帰宅前に家電を操作できない不便を解消し、室温や時刻の条件による自動化、音声操作までまとめて対応する点が特徴として挙げられます。</p></div>
+<article class="col-body">
+<h2>30秒でわかる検証動画</h2>
+<div style="text-align:center"><iframe src="https://www.youtube.com/embed/X3UBDR8UmAo" title="SwitchBot ハブ2（スマートリモコン）" allowfullscreen loading="lazy" style="width:100%;max-width:340px;aspect-ratio:9/16;border:0;border-radius:12px"></iframe></div>
+<h2>赤外線リモコンをスマホに集約する仕組み</h2>
+<p>SwitchBotハブ2は、テレビやエアコンなど赤外線で操作する家電のリモコン信号を登録し、専用アプリから一括操作できるスマートリモコンです。複数のリモコンを持ち替える必要がなく、外出先からの遠隔操作にも対応するとされています。赤外線方式の家電であれば旧式のモデルでも登録できる場合が多く、既存の家電を買い替えずにスマホ操作へ対応させられる点が公開仕様として紹介されています。</p>
+<h2>室温・時刻の条件で家電を自動化</h2>
+<p>ハブ2は温度や湿度、時刻といった条件を設定し、その条件に応じて登録した家電を自動で動作させるオートメーション機能を備えています。たとえば設定した室温を超えたらエアコンを動かす、指定時刻に照明を操作するといった条件設定が可能とされています。アレクサなどの音声アシスタントとの連携にも対応し、声による家電操作もできると案内されています。手動操作を減らす自動化が主な用途です。</p>
+<h2>購入前に確認したい対応家電と設置条件</h2>
+<p>操作対象は赤外線リモコンで動く家電が中心のため、Bluetoothや独自無線方式の家電は対象外となる場合があります。事前に手持ちの家電が対応するか確認しておくと安心です。またアプリの利用やクラウド連携にはWi-Fi環境が必要とされ、赤外線が届く位置への設置も動作の前提となります。音声操作にはアレクサなど対応アシスタント側の機器や設定が別途必要になる点も確認しておきたい項目です。</p>
+<h2>検証方法と情報の出典</h2>
+<p>本記事および検証動画は、メーカーが公開している製品仕様・公式画像に基づいて構成しています。個人の使用体験ではなく、公開情報の整理・検証です。</p><p>製品情報の出典: <a href="https://www.switchbot.jp/products/switchbot-hub2" rel="noopener" target="_blank">メーカー公式ページ</a></p>
+<h2>まとめ</h2>
+<p>SwitchBotハブ2は、赤外線家電のリモコンをスマホに集約し、室温や時刻の条件による自動化や音声操作にまとめて対応するスマートリモコンです。対応家電の方式やWi-Fi環境、設置位置を事前に確認したうえで、既存家電のスマート化を検討する際の選択肢となります。</p><a href="https://a.r10.to/hgjE4h" rel="sponsored noopener" target="_blank" style="display:block;text-align:center;background:#bf0000;color:#fff;font-weight:700;text-decoration:none;border-radius:10px;padding:13px;margin:14px 0">楽天で価格を見る</a><a href="../links.html" style="display:block;text-align:center;border:2px solid #2f8f3a;color:#2f8f3a;font-weight:700;text-decoration:none;border-radius:10px;padding:12px;margin:8px 0">紹介した全商品のリンクまとめ</a><p style="font-size:.8rem;color:#7a5a10;background:#fff7e6;border:1px solid #ffe1a8;border-radius:8px;padding:8px 12px">※本記事はアフィリエイト広告（PR）を含みます。</p>
+<section class="col-faq"><h2>よくある質問</h2><details class="col-faq__item"><summary>旧式の家電でも使えますか</summary><div class="col-faq__a"><p>赤外線リモコンで操作できる家電であれば、旧式のモデルでも登録して使える場合が多いとされています。</p></div></details><details class="col-faq__item"><summary>音声で操作できますか</summary><div class="col-faq__a"><p>アレクサなどの音声アシスタントと連携することで、声による家電操作に対応するとされています。</p></div></details><details class="col-faq__item"><summary>自動で家電を動かせますか</summary><div class="col-faq__a"><p>室温や湿度、時刻などの条件を設定し、条件に応じて家電を自動で動作させる機能を備えています。</p></div></details></section>
+</article>
+<div class="col-cta"><a href="/links.html">SwitchBot ハブ2（スマートリモコン）の製品情報を見る</a></div>
+<aside class="col-related"><h2>関連リンク</h2><a href="./switchbot_lock_ultra.html">SwitchBotロックUltra 顔認証を徹底解説｜後付けスマートロック</a><a href="./projector_hy300.html">Magcubic HY300 Proレビュー｜天井投影できる格安モバイルプロジェ</a><a href="./switchbot_curtain3.html">SwitchBotカーテン3レビュー｜後付けで今のカーテンを自動開閉</a></aside>
+</main>
+</body>
+</html>

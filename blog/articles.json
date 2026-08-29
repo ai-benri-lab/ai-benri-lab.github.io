@@ -1,0 +1,167 @@
+{
+ "anker_powerbank": {
+  "slug": "anker_powerbank",
+  "title": "Anker Nano Power Strip 10-in-1 電源タップの仕様と特徴",
+  "product": "Anker Nano Power Strip（10-in-1 クランプ式電源タップ）",
+  "date": "2026-08-20",
+  "category": "充電・電源",
+  "youtube": "2wT2CTmhYeU",
+  "rakuten": "",
+  "official": "",
+  "price": null
+ },
+ "anker_pikachu_charger": {
+  "slug": "anker_pikachu_charger",
+  "title": "Anker USB急速充電器 70W ピカチュウモデルの特徴と仕様",
+  "product": "Anker USB急速充電器 70W ピカチュウモデル",
+  "date": "2026-08-21",
+  "category": "充電・電源",
+  "youtube": "IlWuK2xSlzo",
+  "rakuten": "",
+  "official": "",
+  "price": null
+ },
+ "switchbot_curtain3": {
+  "slug": "switchbot_curtain3",
+  "title": "SwitchBotカーテン3レビュー｜後付けで今のカーテンを自動開閉",
+  "product": "SwitchBot カーテン3（自動カーテン）",
+  "date": "2026-08-22",
+  "category": "スマートホーム",
+  "youtube": "YhHUFSM72Yk",
+  "rakuten": "https://a.r10.to/hgxL1Y",
+  "official": "https://www.switchbot.jp/products/switchbot-curtain3",
+  "price": null
+ },
+ "projector_hy300": {
+  "slug": "projector_hy300",
+  "title": "Magcubic HY300 Proレビュー｜天井投影できる格安モバイルプロジェクター",
+  "product": "Magcubic HY300 Pro ポータブルプロジェクター",
+  "date": "2026-08-23",
+  "category": "映像・音響",
+  "youtube": "-vLC9a_2FV0",
+  "rakuten": "https://a.r10.to/hkay5f",
+  "official": "https://www.magcubic.com/products/miniprojector-hy300pro",
+  "price": null
+ },
+ "switchbot_lock_ultra": {
+  "slug": "switchbot_lock_ultra",
+  "title": "SwitchBotロックUltra 顔認証を徹底解説｜後付けスマートロック",
+  "product": "SwitchBot ロックUltra 顔認証（スマートロック）",
+  "date": "2026-08-24",
+  "category": "スマートホーム",
+  "youtube": "XaECMP-vdzE",
+  "rakuten": "https://a.r10.to/hgUXdv",
+  "official": "https://www.switchbot.jp/products/switchbot-lock-ultra-vision-pro-combo",
+  "price": null
+ },
+ "switchbot_hub2": {
+  "slug": "switchbot_hub2",
+  "title": "SwitchBotハブ2レビュー｜家中の家電をスマホで一括操作",
+  "product": "SwitchBot ハブ2（スマートリモコン）",
+  "date": "2026-08-25",
+  "category": "スマートホーム",
+  "youtube": "X3UBDR8UmAo",
+  "rakuten": "https://a.r10.to/hgjE4h",
+  "official": "https://www.switchbot.jp/products/switchbot-hub2",
+  "price": null
+ },
+ "switchbot_humidifier": {
+  "slug": "switchbot_humidifier",
+  "title": "SwitchBot気化式加湿器Plusの特徴とスマホ連携を解説",
+  "product": "SwitchBot 気化式加湿器 Plus",
+  "date": "2026-08-25",
+  "category": "スマートホーム",
+  "youtube": "_AbcGilV4kk",
+  "rakuten": "https://a.r10.to/hg5exj",
+  "official": "https://www.switchbot.jp/products/switchbot-evaporative-humidifier-plus",
+  "price": null
+ },
+ "switchbot_blind_tilt": {
+  "slug": "switchbot_blind_tilt",
+  "title": "SwitchBot ブラインドポールで既存ブラインドを自動開閉",
+  "product": "SwitchBot ブラインドポール（自動ブラインド）",
+  "date": "2026-08-26",
+  "category": "スマートホーム",
+  "youtube": "H1BXMXcayXg",
+  "rakuten": "https://a.r10.to/h8T5T2",
+  "official": "https://www.switchbot.jp/products/switchbot-blind-tilt",
+  "price": null
+ },
+ "switchbot_air_purifier": {
+  "slug": "switchbot_air_purifier",
+  "title": "SwitchBot 空気清浄機とは？家具になる1台の特徴",
+  "product": "SwitchBot 空気清浄機",
+  "date": "2026-08-26",
+  "category": "スマートホーム",
+  "youtube": "dS1ic6DjLRU",
+  "rakuten": "https://a.r10.to/hP0Z4z",
+  "official": "https://www.switchbot.jp/products/switchbot-air-purifier",
+  "price": null
+ },
+ "switchbot_strip_light": {
+  "slug": "switchbot_strip_light",
+  "title": "SwitchBot LEDテープライトとは?1600万色の間接照明を解説",
+  "product": "SwitchBot LEDテープライト",
+  "date": "2026-08-27",
+  "category": "照明",
+  "youtube": "Z2pq3Nj6IIc",
+  "rakuten": "https://a.r10.to/hka9uz",
+  "official": "https://www.switchbot.jp/products/switchbot-strip-light",
+  "price": null
+ },
+ "switchbot_motion_sensor": {
+  "slug": "switchbot_motion_sensor",
+  "title": "SwitchBot 人感センサーで照明・家電を自動化する仕組みと仕様",
+  "product": "SwitchBot 人感センサー",
+  "date": "2026-08-27",
+  "category": "スマートホーム",
+  "youtube": "CRb64CQfN7o",
+  "rakuten": "https://a.r10.to/h5tmpK",
+  "official": "https://www.switchbot.jp/products/switchbot-motion-sensor",
+  "price": null
+ },
+ "switchbot_plug_mini": {
+  "slug": "switchbot_plug_mini",
+  "title": "SwitchBotプラグミニ徹底解説｜遠隔操作と電力見える化",
+  "product": "SwitchBot プラグミニ（スマートプラグ）",
+  "date": "2026-08-28",
+  "category": "充電・電源",
+  "youtube": "4HNkYQwsKHw",
+  "rakuten": "https://a.r10.to/hPjcRL",
+  "official": "https://www.switchbot.jp/products/switchbot-plug-mini",
+  "price": null
+ },
+ "switchbot_color_bulb": {
+  "slug": "switchbot_color_bulb",
+  "title": "SwitchBotスマート電球レビュー｜声とスマホで調光・調色",
+  "product": "SwitchBot スマート電球",
+  "date": "2026-08-28",
+  "category": "照明",
+  "youtube": "OOFhDrsJp5M",
+  "rakuten": "https://a.r10.to/hPqp7S",
+  "official": "https://www.switchbot.jp/products/switchbot-color-bulb",
+  "price": null
+ },
+ "anker_zolo_builtin": {
+  "slug": "anker_zolo_builtin",
+  "title": "Anker Zolo Power Bank レビュー｜ケーブル一体型10000mAh",
+  "product": "Anker Zolo Power Bank（ケーブル一体型 10000mAh 30W）",
+  "date": "2026-08-29",
+  "category": "充電・電源",
+  "youtube": "_VtA0_a7CWs",
+  "rakuten": "https://a.r10.to/h5qxZD",
+  "official": "https://www.ankerjapan.com/products/a110ln13",
+  "price": null
+ },
+ "anker_nano_retractable": {
+  "slug": "anker_nano_retractable",
+  "title": "Anker Nano Power Bank レビュー｜巻取り式45W",
+  "product": "Anker Nano Power Bank（巻取り式ケーブル 10000mAh 45W）",
+  "date": "2026-08-29",
+  "category": "充電・電源",
+  "youtube": "ARy_mFxeXAQ",
+  "rakuten": "https://a.r10.to/hY1oG7",
+  "official": "https://www.ankerjapan.com/products/a1638",
+  "price": null
+ }
+}
