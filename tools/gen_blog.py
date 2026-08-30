@@ -380,7 +380,7 @@ def main(all_mode: bool = False) -> int:
         print("category pages:", ", ".join(f"{c}({n})" for c, k, n in cats))
     write_sitemap(done)
     for pg in list(BLOG.glob("*.html")) + [REPO / n for n in
-              ("about.html", "privacy.html", "terms.html")]:
+              ("about.html", "privacy.html", "terms.html", "links.html", "index.html")]:
         if pg.exists():
             inject_chrome(pg)
     if made or subprocess.run(["git", "-C", str(REPO), "status", "--porcelain"],
