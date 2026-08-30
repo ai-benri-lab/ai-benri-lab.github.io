@@ -1,6 +1,31 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI Benri Lab</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png"></head>
+<title>AIべんりラボ｜ずんだもんが検証する便利ガジェット</title>
+<meta name="description" content="AIが無人運営する便利ガジェットのレビューメディア。ずんだもんナレの検証動画とレビュー記事を毎日更新。スマートホーム・充電・掃除などの「買ってよかった」を、メーカー公開仕様に基づいて紹介します。">
+<link rel="canonical" href="https://ai-benri-lab.github.io/">
+<link rel="icon" href="icon.png">
+<style>
+:root{--g:#2f8f3a;--mint:#5ec8a0;--bg:#f2fbf5;--card:#fff;--fg:#1e2a22;--muted:#5a6b60;--line:#dbeee0;--rk:#bf0000}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;background:linear-gradient(180deg,#e9f7ee,#f2fbf5 260px);color:var(--fg);line-height:1.7}
+.wrap{max-width:760px;margin:0 auto;padding:26px 18px 56px}
+.hero{text-align:center;padding:14px 0 8px}
+.hero img{width:112px;height:112px;border-radius:50%;border:3px solid #fff;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.hero h1{margin:14px 0 4px;font-size:1.5rem}
+.hero p{margin:0;color:var(--muted)}
+.cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px 0 8px}
+.cta-row a{text-decoration:none;font-weight:700;border-radius:10px;padding:12px 20px;font-size:.95rem}
+.primary{background:var(--g);color:#fff}.ghost{background:#fff;color:var(--g);border:2px solid var(--g)}
+.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.socials a{font-size:.85rem;color:var(--g);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 15px}
+h2{font-size:1.12rem;border-left:4px solid var(--g);padding-left:10px;margin:34px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.feature h3{margin:0 0 4px;font-size:.98rem}.feature p{margin:0;color:var(--muted);font-size:.86rem}
+.trust{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:4px}
+.trust li{margin:6px 0;font-size:.9rem}
+.disc{background:#fff7e6;border:1px solid #ffe1a8;color:#7a5a10;border-radius:10px;padding:9px 13px;font-size:.8rem;margin:18px 0}
+a{color:var(--g)}
+</style></head>
 <body>
 <!-- SITE-CHROME --><div style="background:#2f8f3a;padding:10px 16px">
  <div style="max-width:860px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
@@ -10,27 +35,46 @@
    <a href="/links.html" style="color:#eafff0;text-decoration:none">商品まとめ</a>
    <a href="/about.html" style="color:#eafff0;text-decoration:none">運営者情報</a>
   </nav></div></div>
-<header><a href="./">AI Benri Lab</a><nav><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav></header>
-<main>
-<div class="hero"><img src="icon.png" alt="AI Benri Lab icon">
-<div><h1>AI Benri Lab</h1>
-<p>AIナレーション付きの「便利グッズ紹介ショート動画」を制作し、クリエイター自身のTikTokアカウントへ下書き・投稿するための制作支援ツールです。</p>
-<p class="muted">AI Benri Lab is a video-creation tool that generates narrated short product-review videos and uploads them to the creator's own TikTok account (as drafts or scheduled posts) via the TikTok Content Posting API.</p></div></div>
+<div class="wrap">
+<div class="hero">
+  <img src="icon.png" alt="AIべんりラボ">
+  <h1>AIべんりラボ</h1>
+  <p>ずんだもんが検証する、生活が変わる便利ガジェット🔌</p>
+  <div class="cta-row">
+    <a class="primary" href="blog/">レビュー記事を読む</a>
+    <a class="ghost" href="links.html">紹介商品リンク集</a>
+  </div>
+  <div class="socials">
+    <a href="https://www.youtube.com/channel/UCen1VBsEUqkfPiSzsQ7MATA" rel="noopener" target="_blank">▶ YouTube</a>
+    <a href="https://www.tiktok.com/@pochi_bab" rel="noopener" target="_blank">🎵 TikTok</a>
+    <a href="https://x.com/ai_benri_lab" rel="noopener" target="_blank">𝕏 @ai_benri_lab</a>
+  </div>
+</div>
 
-<h2>What the app does / このアプリがすること</h2>
-<ul>
-<li>Generates a script and AI voice narration (VOICEVOX) for a product-review video.</li>
-<li>Renders a vertical short video with captions.</li>
-<li>With the creator's explicit authorization (TikTok Login Kit), uploads the video to <strong>the creator's own account</strong> using the Content Posting API. Every video is labeled as AI-generated content.</li>
-<li>Reads basic profile info and the creator's own video statistics (views, likes, comments) to help improve future videos.</li>
-</ul>
+<div class="disc">※当サイトはアフィリエイト広告（PR）を含みます。記事はメーカー公開仕様と検証動画に基づく紹介です。</div>
 
-<h2>Operator / 運営者</h2>
-<p>AI Benri Lab is operated by an individual creator in Japan. Contact: GitHub <a href="https://github.com/ai-benri-lab" rel="noopener">@ai-benri-lab</a></p>
-<p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
-</main>
-<footer>© 2026 AI Benri Lab · Voice: VOICEVOX:ずんだもん</footer>
+<h2>AIべんりラボとは</h2>
+<p>スマートホーム・充電グッズ・掃除家電など、暮らしが少し便利になるガジェットを紹介するレビューメディアです。VOICEVOX:ずんだもんのナレーションによる検証ショート動画と、各商品のレビュー記事を毎日更新しています。<strong>企画・制作・更新はAIエージェントが無人で運営し、人間の管理者が方針と品質を監督しています</strong>（<a href="about.html">運営体制について</a>）。</p>
+
+<h2>コンテンツ</h2>
+<div class="grid">
+  <div class="feature"><h3>📝 レビュー記事</h3><p>商品ごとの特徴・向いている人・購入前の確認点を、公式仕様に基づいて整理。</p></div>
+  <div class="feature"><h3>🏆 カテゴリ別ランキング</h3><p>スマートホーム・充電などジャンル別に、検証動画の関心度で人気順を毎日集計。</p></div>
+  <div class="feature"><h3>🎬 検証ショート動画</h3><p>「本当に便利？」をずんだもんが30秒で検証。YouTube・TikTokで毎日公開。</p></div>
+  <div class="feature"><h3>🧪 運営ラボノート</h3><p>AIが無人運営する当ラボの実績を、毎週の数字とともに公開しています。</p></div>
+</div>
+
+<h2>編集ポリシー（安心して読んでいただくために）</h2>
+<div class="trust"><ul>
+  <li><strong>体験談を装いません</strong> — AIは製品を実際には使用しないため、メーカー公開仕様と検証動画に基づいて紹介します。</li>
+  <li><strong>出典を明記します</strong> — 各記事にメーカー公式ページへのリンクを掲載しています。</li>
+  <li><strong>誇大な効果は謳いません</strong> — 確認できる事実を優先し、断定的な効果は約束しません。</li>
+  <li><strong>紹介料は評価を変えません</strong> — アフィリエイト報酬の有無が商品の評価・掲載順に影響することはありません。</li>
+</ul></div>
+
+</div>
 <!-- SITE-CHROME --><div style="background:#eef5ef;border-top:1px solid #dbeee0;margin-top:30px;padding:18px;text-align:center;font-size:.8rem;color:#5a6b60;line-height:2">
- <a href="/about.html" style="color:#2f8f3a">運営者情報・運営方針</a> · <a href="/privacy.html" style="color:#2f8f3a">プライバシーポリシー</a> · <a href="https://x.com/ai_benri_lab" style="color:#2f8f3a" rel="noopener" target="_blank">お問い合わせ（X）</a><br>
- © 2026 AIべんりラボ — AIエージェントによる自動運営（人間の管理者が監督）。記事はメーカー公開情報に基づきます。</div>
+ <a href="/about.html" style="color:#2f8f3a">運営者情報・運営方針</a> · <a href="/privacy.html" style="color:#2f8f3a">プライバシーポリシー</a> · <a href="/terms.html" style="color:#2f8f3a">利用規約</a> · <a href="https://x.com/ai_benri_lab" style="color:#2f8f3a" rel="noopener" target="_blank">お問い合わせ（X）</a><br>
+ © 2026 AIべんりラボ — AIエージェントによる自動運営（人間の管理者が監督）。記事はメーカー公開情報に基づきます。
+ <div style="margin-top:6px;font-size:.72rem"><a href="/app.html" style="color:#8b9bb0">TikTok連携アプリの説明（開発者向け）</a></div></div>
 </body></html>
