@@ -195,6 +195,13 @@ def write_index(manifest):
         f'<a href="{html.escape(a["slug"])}.html">{html.escape(a.get("title", a["slug"])[:80])}</a>'
         f'<div class="d">{html.escape(a.get("date", ""))} · {html.escape(a.get("product", "")[:40])}</div></div>\n'
         for a in ordered)
+    from collections import Counter
+    cat_counts = Counter(a.get("category", "その他") for a in manifest.values())
+    chips = " ".join(
+        f'<a class="tag" style="text-decoration:none;padding:5px 14px;font-size:.82rem" '
+        f'href="cat-{CAT_KEYS[c]}.html">{html.escape(c)}ランキング ({n})</a>'
+        for c, n in cat_counts.most_common() if n >= 2 and c in CAT_KEYS)
+    chips_html = f'<div style="margin:12px 0">{chips}</div>' if chips else ""
     (BLOG / "index.html").write_text(f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>便利ガジェットのレビュー記事一覧｜AIべんりラボ</title>
@@ -204,9 +211,79 @@ def write_index(manifest):
 <header><a href="../">AIべんりラボ</a> · <a href="../links.html">商品リンクまとめ</a></header>
 <h1>📝 便利ガジェット レビュー記事一覧</h1>
 <div class="disc">※当ブログはアフィリエイト広告（PR）を含みます。記事はメーカー公開仕様と検証動画に基づく紹介です。</div>
+{chips_html}
 {cards}
 <footer>© 2026 AIべんりラボ · 毎日12時/19時に検証動画を公開 · 音声: VOICEVOX:ずんだもん</footer>
 </div></body></html>""", encoding="utf-8")
+
+
+
+CAT_KEYS = {"スマートホーム": "smarthome", "掃除・家事": "cleaning", "充電・電源": "power",
+            "照明": "light", "映像・音響": "av", "ペット": "pet", "その他": "misc"}
+
+
+def _fetch_views():
+    """商品ごとのYouTube再生数（LAN内ダッシュボードAPIから。取れなければ空=日付順ランキング）。"""
+    try:
+        r = requests.get("http://192.168.11.15:5003/api/state", timeout=15)
+        out = {}
+        for row in r.json().get("content", []):
+            yt = row.get("youtube") or {}
+            if yt.get("views") is not None:
+                out[row["slug"]] = int(yt["views"])
+        return out
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def write_category_pages(manifest):
+    """カテゴリ別人気ランキングページ（記事2本以上のカテゴリのみ）。JSON-LD ItemList付き。
+    ランキング根拠は「検証動画のYouTube再生数」— ページ上にも根拠を明記（比較サイトとしての公平性）。"""
+    views = _fetch_views()
+    year = datetime.now(JST).year
+    made = []
+    for cat, key in CAT_KEYS.items():
+        arts = [a for a in manifest.values() if a.get("category") == cat]
+        if len(arts) < 2:
+            continue
+        arts.sort(key=lambda a: (views.get(a["slug"], 0), a.get("date", "")), reverse=True)
+        items_ld = [{"@type": "ListItem", "position": i + 1,
+                     "url": f"{SITE}/blog/{a['slug']}.html",
+                     "name": a.get("product", a["slug"])} for i, a in enumerate(arts)]
+        ld = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
+                         "itemListElement": items_ld}, ensure_ascii=False)
+        cards = ""
+        for i, a in enumerate(arts, 1):
+            v = views.get(a["slug"])
+            vtxt = f"検証動画 {v:,}回再生" if v else ""
+            rk = (f'<a style="display:inline-block;background:#bf0000;color:#fff;font-weight:700;'
+                  f'text-decoration:none;border-radius:8px;padding:8px 18px;font-size:.88rem" '
+                  f'href="{a["rakuten"]}" rel="sponsored noopener" target="_blank">楽天で見る</a>'
+                  if a.get("rakuten") else "")
+            cards += f"""  <div class="card"><div style="font-weight:800;color:#2f8f3a">第{i}位</div>
+    <a href="{html.escape(a['slug'])}.html" style="font-size:1.05rem">{html.escape(a.get('product', a['slug'])[:50])}</a>
+    <div class="d">{html.escape(a.get('title', '')[:70])} · {vtxt}</div>
+    <div style="margin-top:8px">{rk} <a href="{html.escape(a['slug'])}.html" style="margin-left:10px;color:#2f8f3a">レビュー記事へ →</a></div>
+  </div>
+"""
+        page = f"""<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{cat}の便利グッズ人気ランキング【{year}年】｜AIべんりラボ</title>
+<meta name="description" content="{cat}カテゴリの便利ガジェット{len(arts)}商品を、検証動画の再生数に基づいてランキング形式で紹介。各商品の詳細レビュー記事つき。">
+<link rel="canonical" href="{SITE}/blog/cat-{key}.html">
+<link rel="icon" href="../icon.png"><style>{INDEX_CSS}</style>
+<script type="application/ld+json">{ld}</script></head><body><div class="wrap">
+<header><a href="./">← レビュー記事一覧</a></header>
+<h1>{cat}の便利グッズ 人気ランキング【{year}年版】</h1>
+<div class="disc">※本ページはアフィリエイト広告（PR）を含みます。順位は当ラボの検証動画のYouTube再生数（読者の関心度）に基づき、毎日自動更新されます。</div>
+{cards}
+<h2>ランキングの根拠</h2>
+<p>掲載順は、各商品の検証動画のYouTube再生数を基準に自動集計しています。紹介料の有無・金額は順位に影響しません。各商品の詳細はメーカー公開仕様に基づくレビュー記事をご覧ください。</p>
+<footer>© {year} AIべんりラボ</footer>
+</div></body></html>"""
+        (BLOG / f"cat-{key}.html").write_text(page, encoding="utf-8")
+        made.append((cat, key, len(arts)))
+    return made
 
 
 def main(all_mode: bool = False) -> int:
@@ -298,9 +375,14 @@ def main(all_mode: bool = False) -> int:
         print(f"article: {slug} [{manifest[slug]['category']}]")
     mf_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     write_index(manifest)
+    cats = write_category_pages(manifest)
+    if cats:
+        print("category pages:", ", ".join(f"{c}({n})" for c, k, n in cats))
     write_sitemap(done)
-    for pg in BLOG.glob("*.html"):
-        inject_chrome(pg)
+    for pg in list(BLOG.glob("*.html")) + [REPO / n for n in
+              ("about.html", "privacy.html", "terms.html")]:
+        if pg.exists():
+            inject_chrome(pg)
     if made or subprocess.run(["git", "-C", str(REPO), "status", "--porcelain"],
                               capture_output=True, text=True).stdout.strip():
         sh(["git", "-C", str(REPO), "add", "blog", "sitemap.xml", "robots.txt"])
