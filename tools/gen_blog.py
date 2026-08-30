@@ -208,6 +208,10 @@ def write_index(manifest):
         f'<a class="tag" style="text-decoration:none;padding:5px 14px;font-size:.82rem" '
         f'href="cat-{CAT_KEYS[c]}.html">{html.escape(c)}ランキング ({n})</a>'
         for c, n in cat_counts.most_common() if n >= 2 and c in CAT_KEYS)
+    if cat_counts.get("運営レポート"):
+        chips = ('<a class="tag" style="text-decoration:none;padding:5px 14px;font-size:.82rem;'
+                 f'background:#241f12;color:#ffd479" href="#labnotes">🧪 運営ラボノート ({cat_counts["運営レポート"]})</a> '
+                 + chips)
     chips_html = f'<div style="margin:12px 0">{chips}</div>' if chips else ""
     (BLOG / "index.html").write_text(f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
