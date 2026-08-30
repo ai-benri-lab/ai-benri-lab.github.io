@@ -191,11 +191,17 @@ def write_sitemap(done):
 
 def write_index(manifest):
     ordered = sorted(manifest.values(), key=lambda a: a.get("date", ""), reverse=True)
-    cards = "".join(
-        f'<div class="card"><span class="tag">{html.escape(a.get("category", "その他"))}</span>'
-        f'<a href="{html.escape(a["slug"])}.html">{html.escape(a.get("title", a["slug"])[:80])}</a>'
-        f'<div class="d">{html.escape(a.get("date", ""))} · {html.escape(a.get("product", "")[:40])}</div></div>\n'
-        for a in ordered)
+    _note_anchored = [False]
+
+    def _card(a):
+        anchor = ""
+        if a.get("category") == "運営レポート" and not _note_anchored[0]:
+            anchor = ' id="labnotes"'
+            _note_anchored[0] = True
+        return (f'<div class="card"{anchor}><span class="tag">{html.escape(a.get("category", "その他"))}</span>'
+                f'<a href="{html.escape(a["slug"])}.html">{html.escape(a.get("title", a["slug"])[:80])}</a>'
+                f'<div class="d">{html.escape(a.get("date", ""))} · {html.escape(a.get("product", "")[:40])}</div></div>\n')
+    cards = "".join(_card(a) for a in ordered)
     from collections import Counter
     cat_counts = Counter(a.get("category", "その他") for a in manifest.values())
     chips = " ".join(

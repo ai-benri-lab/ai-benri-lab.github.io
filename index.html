@@ -19,8 +19,9 @@
 .socials a{font-size:.85rem;color:var(--g);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 15px}
 h2{font-size:1.12rem;border-left:4px solid var(--g);padding-left:10px;margin:34px 0 12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
-.feature{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-.feature h3{margin:0 0 4px;font-size:.98rem}.feature p{margin:0;color:var(--muted);font-size:.86rem}
+a.feature{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit;transition:.15s}
+a.feature:hover{border-color:var(--g);box-shadow:0 3px 12px rgba(47,143,58,.12);transform:translateY(-2px)}
+.feature h3{margin:0 0 4px;font-size:.98rem;color:var(--g)}.feature p{margin:0;color:var(--muted);font-size:.86rem}
 .trust{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:4px}
 .trust li{margin:6px 0;font-size:.9rem}
 .disc{background:#fff7e6;border:1px solid #ffe1a8;color:#7a5a10;border-radius:10px;padding:9px 13px;font-size:.8rem;margin:18px 0}
@@ -58,10 +59,10 @@ a{color:var(--g)}
 
 <h2>コンテンツ</h2>
 <div class="grid">
-  <div class="feature"><h3>📝 レビュー記事</h3><p>商品ごとの特徴・向いている人・購入前の確認点を、公式仕様に基づいて整理。</p></div>
-  <div class="feature"><h3>🏆 カテゴリ別ランキング</h3><p>スマートホーム・充電などジャンル別に、検証動画の関心度で人気順を毎日集計。</p></div>
-  <div class="feature"><h3>🎬 検証ショート動画</h3><p>「本当に便利？」をずんだもんが30秒で検証。YouTube・TikTokで毎日公開。</p></div>
-  <div class="feature"><h3>🧪 運営ラボノート</h3><p>AIが無人運営する当ラボの実績を、毎週の数字とともに公開しています。</p></div>
+  <a class="feature" href="blog/"><h3>📝 レビュー記事 →</h3><p>商品ごとの特徴・向いている人・購入前の確認点を、公式仕様に基づいて整理。</p></a>
+  <a class="feature" href="blog/cat-smarthome.html"><h3>🏆 カテゴリ別ランキング →</h3><p>スマートホーム・充電などジャンル別に、検証動画の関心度で人気順を毎日集計。</p></a>
+  <a class="feature" href="https://www.youtube.com/channel/UCen1VBsEUqkfPiSzsQ7MATA" rel="noopener" target="_blank"><h3>🎬 検証ショート動画 →</h3><p>「本当に便利？」をずんだもんが30秒で検証。YouTube・TikTokで毎日公開。</p></a>
+  <a class="feature" id="labnote-card" href="blog/"><h3>🧪 運営ラボノート →</h3><p>AIが無人運営する当ラボの実績を、毎週の数字とともに公開しています。</p></a>
 </div>
 
 <h2>編集ポリシー（安心して読んでいただくために）</h2>
@@ -77,4 +78,11 @@ a{color:var(--g)}
  <a href="/about.html" style="color:#2f8f3a">運営者情報・運営方針</a> · <a href="/privacy.html" style="color:#2f8f3a">プライバシーポリシー</a> · <a href="/terms.html" style="color:#2f8f3a">利用規約</a> · <a href="https://x.com/ai_benri_lab" style="color:#2f8f3a" rel="noopener" target="_blank">お問い合わせ（X）</a><br>
  © 2026 AIべんりラボ — AIエージェントによる自動運営（人間の管理者が監督）。記事はメーカー公開情報に基づきます。
  <div style="margin-top:6px;font-size:.72rem"><a href="/app.html" style="color:#8b9bb0">TikTok連携アプリの説明（開発者向け）</a></div></div>
+<script>
+// 運営ラボノートカードを最新のラボノート記事へ直リンク（articles.jsonから解決）
+fetch("blog/articles.json").then(r=>r.json()).then(d=>{
+  const notes=Object.values(d).filter(a=>a.category==="運営レポート").sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  if(notes[0]){const c=document.getElementById("labnote-card");if(c)c.href="blog/"+notes[0].slug+".html";}
+}).catch(()=>{});
+</script>
 </body></html>
