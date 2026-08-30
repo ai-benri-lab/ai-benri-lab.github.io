@@ -1,3 +1,4 @@
-
 tools/_blogdata/
+tools/queue_snapshot.yaml
+tools/__pycache__/
 tools/sync_links.log
