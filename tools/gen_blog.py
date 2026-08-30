@@ -28,11 +28,12 @@ import yaml
 REPO = Path(__file__).resolve().parents[1]
 BLOG = REPO / "blog"
 TOOLS = REPO / "tools"
-BUILDER = Path.home() / ".claude" / "skills" / "aio-column" / "scripts" / "build_column.py"
-KEY = str(Path.home() / ".ssh" / "id_ed25519_claude_win")
-PRODESK = "claude@192.168.11.30"
+import os as _os
+BUILDER = Path(_os.environ.get("AIO_BUILDER", str(Path.home() / ".claude" / "skills" / "aio-column" / "scripts" / "build_column.py")))
+KEY = _os.environ.get("PRODESK_KEY", str(Path.home() / ".ssh" / "id_ed25519_claude_win"))
+PRODESK = _os.environ.get("PRODESK_HOST", "claude@192.168.11.30")
 RROOT = "C:/Users/claude/shorts-factory"
-PROXIES = ["http://localhost:3457", "http://192.168.11.15:3457"]
+PROXIES = _os.environ.get("PROXY_URLS", "http://localhost:3457,http://192.168.11.15:3457").split(",")
 JST = timezone(timedelta(hours=9))
 SITE = "https://ai-benri-lab.github.io"
 RAKUTEN_RE = re.compile(r"^https://a\.r10\.to/[A-Za-z0-9]+$")

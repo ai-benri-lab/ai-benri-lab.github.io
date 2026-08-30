@@ -20,8 +20,9 @@ import yaml
 
 REPO = Path(__file__).resolve().parents[1]
 LINKS = REPO / "links.html"
-KEY = str(Path.home() / ".ssh" / "id_ed25519_claude_win")
-REMOTE = "claude@192.168.11.30:C:/Users/claude/shorts-factory/data/queue.yaml"
+import os as _os
+KEY = _os.environ.get("PRODESK_KEY", str(Path.home() / ".ssh" / "id_ed25519_claude_win"))
+REMOTE = _os.environ.get("PRODESK_HOST", "claude@192.168.11.30") + ":C:/Users/claude/shorts-factory/data/queue.yaml"
 START, END = "<!-- AUTO-CARDS START -->", "<!-- AUTO-CARDS END -->"
 RAKUTEN_RE = re.compile(r"^https://a\.r10\.to/[A-Za-z0-9]+$")
 
