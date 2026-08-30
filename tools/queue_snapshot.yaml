@@ -134,3 +134,36 @@ items:
     images: { shopify: "https://www.switchbot.jp/products/switchbot-smart-circulator-fan-2-pro" }
     affiliate_links:
       - {label: "▼ 楽天はこちら", url: "https://a.r10.to/hPLXUQ"}
+  # --- 2026-08-29 自動補充（replenish.py） ---
+  - slug: homerunpet_loobo_max_auto_cat_litter
+    name: homerunPET 全自動猫トイレ　Loobo Max
+    length: 28
+    queries: ["自動猫トイレ", "SwitchBot 猫トイレ"]
+    images: { shopify: "https://www.switchbot.jp/products/homerunpet-the-biggest-self-cleaning-litter-box" }
+    blurb: "全自動でネコも大満足の自動トイレ"
+    affiliate_links:
+      - {label: "▼ 楽天はこちら", url: "https://a.r10.to/hPuGUK"}
+  - slug: soundcore_c50i_pikachu
+    name: Soundcore C50i ピカチュウモデル
+    length: 28
+    queries: ["ピカチュウ イヤホン", "Soundcore C50i"]
+    images: { shopify: "https://www.ankerjapan.com/products/d1101nk1" }
+    blurb: "ピカチュウと過ごす完全ワイヤレス"
+    affiliate_links:
+      - {label: "▼ 楽天はこちら", url: "https://a.r10.to/he62yA"}
+  - slug: anker_solix_everfrost2_cooler
+    name: Anker Solix EverFrost 2 40L Electric Cooler
+    length: 28
+    queries: ["ポータブル冷蔵庫", "Anker EverFrost"]
+    images: { shopify: "https://www.ankerjapan.com/products/a17a4" }
+    blurb: "どこでも冷え冷え電動ポータブル冷蔵庫"
+    affiliate_links:
+      - {label: "▼ 楽天はこちら", url: "https://a.r10.to/hYi2kW"}
+  - slug: switchbot_candle_warmer
+    name: SwitchBot キャンドルウォーマー
+    length: 28
+    queries: ["キャンドルウォーマー", "SwitchBot キャンドルウォーマー"]
+    images: { shopify: "https://www.switchbot.jp/products/switchbot-candle-warmer-lamp" }
+    blurb: "灯すだけで癒しのキャンドルウォーマー"
+    affiliate_links:
+      - {label: "▼ 楽天はこちら", url: "https://a.r10.to/hRQ0Gu"}
