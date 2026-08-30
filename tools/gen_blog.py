@@ -63,7 +63,7 @@ footer{color:var(--muted);font-size:.78rem;text-align:center;margin-top:32px}
 
 
 CHROME_MARK = "<!-- SITE-CHROME -->"
-HEADER_HTML = CHROME_MARK + """<div style="background:#2f8f3a;padding:10px 16px">
+HEADER_HTML = CHROME_MARK + """<!-- GA4 --><script async src="https://www.googletagmanager.com/gtag/js?id=G-M1MN59FC6Q"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-M1MN59FC6Q');</script><div style="background:#2f8f3a;padding:10px 16px">
  <div style="max-width:860px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
   <a href="/" style="color:#fff;text-decoration:none;font-weight:800">🫛 AIべんりラボ</a>
   <nav style="display:flex;gap:14px;font-size:.85rem">
