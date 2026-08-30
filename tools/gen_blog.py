@@ -345,7 +345,14 @@ def write_lab_note(manifest):
     if not week or not w.get("summary"):
         return None
     slug = "labnote_" + re.sub(r"[^0-9]", "", week)
-    if not slug or (BLOG / f"{slug}.html").exists():
+    if not slug:
+        return None
+    if (BLOG / f"{slug}.html").exists():
+        # 既に生成済み: manifest未登録なら登録だけ補完して終了（一覧/トップの導線が消えないように）
+        if slug not in manifest:
+            manifest[slug] = {"slug": slug, "title": f"週次運営レポート {week}", "product": "週次運営レポート",
+                              "date": datetime.now(JST).date().isoformat(),
+                              "category": "運営レポート", "youtube": "", "rakuten": "", "official": ""}
         return None
     pub = {k: stats.get(k) for k in (
         "week", "yt_views_delta", "yt_views_total", "yt_subs", "tt_followers", "videos_total",
@@ -486,8 +493,8 @@ def main(all_mode: bool = False) -> int:
                           "price": None}
         made += 1
         print(f"article: {slug} [{manifest[slug]['category']}]")
+    write_lab_note(manifest)   # ラボノートも manifest に足してから保存する（保存はこの後）
     mf_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-    write_lab_note(manifest)
     write_index(manifest)
     cats = write_category_pages(manifest)
     if cats:
