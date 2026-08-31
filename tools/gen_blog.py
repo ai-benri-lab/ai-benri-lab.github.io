@@ -36,7 +36,12 @@ RROOT = "C:/Users/claude/shorts-factory"
 PROXIES = _os.environ.get("PROXY_URLS", "http://localhost:3457,http://192.168.11.15:3457").split(",")
 JST = timezone(timedelta(hours=9))
 SITE = "https://ai-benri-lab.github.io"
-RAKUTEN_RE = re.compile(r"^https://a\.r10\.to/[A-Za-z0-9]+$")
+# 楽天リンクの許可形式（injection対策）: 旧 a.r10.to 直リンク、または
+# もしも経由リンク（現金化。媒体固定パラメータ + url= は item.rakuten.co.jp のみ）。
+RAKUTEN_RE = re.compile(
+    r"^https://a\.r10\.to/[A-Za-z0-9]+$"
+    r"|^https://af\.moshimo\.com/af/c/click\?a_id=5781682&p_id=54&pc_id=54&pl_id=27059"
+    r"&url=https%3A%2F%2Fitem\.rakuten\.co\.jp%2F[A-Za-z0-9%_./-]+$")
 STORE_RE = re.compile(r"^https://www\.(switchbot\.jp|ankerjapan\.com|magcubic\.com)/products/[\w-]+$")
 VID_RE = re.compile(r"^[A-Za-z0-9_-]{6,20}$")
 MAX_PER_RUN = 8
@@ -141,7 +146,7 @@ def build_article(slug, name, date, vid, rakuten, official, body, recent):
     src_link = (f'<p>製品情報の出典: <a href="{official}" rel="noopener" target="_blank">メーカー公式ページ</a></p>'
                 if official else "")
     sections.append({"h2": "検証方法と情報の出典", "html": esc_p(method) + src_link})
-    cta = (f'<a href="{rakuten}" rel="sponsored noopener" target="_blank" '
+    cta = (f'<a href="{html.escape(rakuten, quote=True)}" rel="sponsored noopener" target="_blank" '
            f'style="display:block;text-align:center;background:#bf0000;color:#fff;font-weight:700;'
            f'text-decoration:none;border-radius:10px;padding:13px;margin:14px 0">楽天で価格を見る</a>'
            if rakuten else "")
@@ -269,7 +274,7 @@ def write_category_pages(manifest):
             vtxt = f"検証動画 {v:,}回再生" if v else ""
             rk = (f'<a style="display:inline-block;background:#bf0000;color:#fff;font-weight:700;'
                   f'text-decoration:none;border-radius:8px;padding:8px 18px;font-size:.88rem" '
-                  f'href="{a["rakuten"]}" rel="sponsored noopener" target="_blank">楽天で見る</a>'
+                  f'href="{html.escape(str(a["rakuten"]), quote=True)}" rel="sponsored noopener" target="_blank">楽天で見る</a>'
                   if a.get("rakuten") else "")
             cards += f"""  <div class="card"><div style="font-weight:800;color:#2f8f3a">第{i}位</div>
     <a href="{html.escape(a['slug'])}.html" style="font-size:1.05rem">{html.escape(a.get('product', a['slug'])[:50])}</a>

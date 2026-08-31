@@ -8,7 +8,8 @@
 
 安全策（queue.yaml 由来テキストはLLM/外部データを含むため信頼しない）:
 - name/blurb は HTML エスケープ + 長さ制限（injectionでタグ/スクリプトを入れられない）
-- リンク URL は https://a.r10.to/<英数> 形式のみ採用（それ以外は「準備中」表示）
+- リンク URL は a.r10.to 直リンク、または もしも経由リンク（現金化・媒体固定パラメータ+item.rakuten）のみ採用
+  （それ以外は「準備中」表示）
 """
 import html
 import re
@@ -24,7 +25,12 @@ import os as _os
 KEY = _os.environ.get("PRODESK_KEY", str(Path.home() / ".ssh" / "id_ed25519_claude_win"))
 REMOTE = _os.environ.get("PRODESK_HOST", "claude@192.168.11.30") + ":C:/Users/claude/shorts-factory/data/queue.yaml"
 START, END = "<!-- AUTO-CARDS START -->", "<!-- AUTO-CARDS END -->"
-RAKUTEN_RE = re.compile(r"^https://a\.r10\.to/[A-Za-z0-9]+$")
+# 楽天リンクの許可形式（injection対策）: 旧 a.r10.to 直リンク、または
+# もしも経由リンク（現金化。媒体固定パラメータ + url= は item.rakuten.co.jp のみ）。
+RAKUTEN_RE = re.compile(
+    r"^https://a\.r10\.to/[A-Za-z0-9]+$"
+    r"|^https://af\.moshimo\.com/af/c/click\?a_id=5781682&p_id=54&pc_id=54&pl_id=27059"
+    r"&url=https%3A%2F%2Fitem\.rakuten\.co\.jp%2F[A-Za-z0-9%_./-]+$")
 
 
 def fetch_queue() -> dict:
@@ -46,10 +52,11 @@ def card(item: dict) -> str:
     if not url:
         return ""  # リンクの無い商品はページに載せない
     sub = f'\n    <p class="sub">{blurb}</p>' if blurb else ""
+    href = html.escape(url, quote=True)  # もしもURLの & を &amp; に（HTML属性として正しく）
     return f"""  <div class="card">
     <h2>{name}</h2>{sub}
     <div class="btns">
-      <a class="btn rk" href="{url}" rel="sponsored noopener" target="_blank">楽天で見る</a>
+      <a class="btn rk" href="{href}" rel="sponsored noopener" target="_blank">楽天で見る</a>
       <span class="btn soon">Amazon準備中</span>
     </div>
   </div>
