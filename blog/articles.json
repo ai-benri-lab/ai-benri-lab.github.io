@@ -173,5 +173,37 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "switchbot_k11_pro": {
+  "slug": "switchbot_k11_pro",
+  "title": "SwitchBot K11+ Proレビュー｜世界最小級で吸引2倍",
+  "product": "SwitchBot ロボット掃除機 K11+ Pro",
+  "date": "2026-08-30",
+  "category": "掃除・家事",
+  "youtube": "B69pR1r5xr4",
+  "rakuten": "https://a.r10.to/h9ETNj",
+  "official": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k11-pro",
+  "price": null
+ },
+ "switchbot_circulator2pro": {
+  "slug": "switchbot_circulator2pro",
+  "title": "SwitchBot スマートサーキュレーター2 Proの仕様と特徴",
+  "product": "SwitchBot スマートサーキュレーター 2 Pro",
+  "date": "2026-08-30",
+  "category": "スマートホーム",
+  "youtube": "3-f7T1-g29Y",
+  "rakuten": "https://a.r10.to/hPLXUQ",
+  "official": "https://www.switchbot.jp/products/switchbot-smart-circulator-fan-2-pro",
+  "price": null
+ },
+ "labnote_08240831": {
+  "slug": "labnote_08240831",
+  "title": "週次レポート08/24〜31：視聴急伸も収益ゼロ",
+  "product": "週次運営レポート",
+  "date": "2026-08-31",
+  "category": "運営レポート",
+  "youtube": "",
+  "rakuten": "",
+  "official": ""
  }
 }
