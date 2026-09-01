@@ -363,6 +363,12 @@ def write_lab_note(manifest):
                               "date": datetime.now(JST).date().isoformat(),
                               "category": "運営レポート", "youtube": "", "rakuten": "", "official": ""}
         return None
+    # 週1回だけ生成する（blog_sync は毎日走るが、週の集計窓が7日ローリングで slug が日々変わるため、
+    # ゲートしないと毎日レポートが増える＝日報化する）。新規生成は指定曜日のみ。既存ノートの導線は上の分岐で維持。
+    # LABNOTE_WEEKDAY: 0=月 1=火 2=水 3=木 4=金 5=土 6=日（既定=月。weekly_report.py の月曜集計に合わせる）
+    report_wday = int(_os.environ.get("LABNOTE_WEEKDAY", "0"))
+    if datetime.now(JST).weekday() != report_wday:
+        return None
     pub = {k: stats.get(k) for k in (
         "week", "yt_views_delta", "yt_views_total", "yt_subs", "tt_followers", "videos_total",
         "rakuten_clicks_delta", "rakuten_clicks_month", "gsc_impressions_28d",
