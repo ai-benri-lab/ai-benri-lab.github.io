@@ -228,5 +228,27 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa17d2%2F",
   "official": "https://www.ankerjapan.com/products/a17a4",
   "price": null
+ },
+ "switchbot_candle_warmer": {
+  "slug": "switchbot_candle_warmer",
+  "title": "SwitchBotキャンドルウォーマー｜火を使わず香る照明",
+  "product": "SwitchBot キャンドルウォーマー",
+  "date": "2026-09-02",
+  "category": "照明",
+  "youtube": "qVha-Jacqco",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fcandlelamp%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-candle-warmer-lamp",
+  "price": null
+ },
+ "switchbot_ai_art_canvas": {
+  "slug": "switchbot_ai_art_canvas",
+  "title": "SwitchBot AIアートキャンバスとは|AIが名画を描くデジタル額",
+  "product": "SwitchBot AIアートキャンバス",
+  "date": "2026-09-02",
+  "category": "その他",
+  "youtube": "mHKg2m6WcVQ",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fai-art-frame%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-ai-art-frame",
+  "price": null
  }
 }
