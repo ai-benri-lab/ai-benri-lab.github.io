@@ -272,5 +272,27 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fd1301%2F",
   "official": "https://www.ankerjapan.com/products/d1301",
   "price": null
+ },
+ "soundcore_c50i_eevee": {
+  "slug": "soundcore_c50i_eevee",
+  "title": "soundcore_c50i_eevee徹底解説|耳を塞がないイーブイ柄イヤホン",
+  "product": "soundcore_c50i_eevee",
+  "date": "2026-09-05",
+  "category": "映像・音響",
+  "youtube": "M58PewOXbG8",
+  "rakuten": "",
+  "official": "",
+  "price": null
+ },
+ "eufy_smarttrack_card_e40": {
+  "slug": "eufy_smarttrack_card_e40",
+  "title": "eufy SmartTrack Card E40 財布に入る薄型カードタグ",
+  "product": "eufy_smarttrack_card_e40",
+  "date": "2026-09-05",
+  "category": "スマートホーム",
+  "youtube": "YMRTiafD5Hw",
+  "rakuten": "",
+  "official": "",
+  "price": null
  }
 }
