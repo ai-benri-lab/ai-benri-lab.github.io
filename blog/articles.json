@@ -294,5 +294,59 @@
   "rakuten": "",
   "official": "",
   "price": null
+ },
+ "switchbot_smart_tracker_card": {
+  "slug": "switchbot_smart_tracker_card",
+  "title": "SwitchBotスマートトラッカーカードの特徴と仕様まとめ",
+  "product": "SwitchBot スマートトラッカーカード",
+  "date": "2026-09-06",
+  "category": "スマートホーム",
+  "youtube": "0Wxfksql16U",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010920%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-wallet-finder-card",
+  "price": null
+ },
+ "homerunpet_drybo_pet_dryer_house": {
+  "slug": "homerunpet_drybo_pet_dryer_house",
+  "title": "Drybo Pro 全自動ペットドライヤーハウスの特徴と仕様",
+  "product": "homerunPET Drybo Pro 全自動ペットドライヤーハウス",
+  "date": "2026-09-06",
+  "category": "ペット",
+  "youtube": "ncL7jMihT7M",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fhomerunpet-drybo-pro%2F",
+  "official": "",
+  "price": null
+ },
+ "switchbot_ai_mind_clip": {
+  "slug": "switchbot_ai_mind_clip",
+  "title": "SwitchBot AIマインドクリップとは｜文字起こし要約AIレコーダー",
+  "product": "SwitchBot AIマインドクリップ",
+  "date": "2026-09-06",
+  "category": "その他",
+  "youtube": "dZY5_6EZlxg",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fai-mindclip%2F",
+  "official": "",
+  "price": null
+ },
+ "pet_blower": {
+  "slug": "pet_blower",
+  "title": "homerunPETペットブロワーとは｜43dB静音のペット送風機",
+  "product": "homerunPET ペットブロワー",
+  "date": "2026-09-06",
+  "category": "ペット",
+  "youtube": "qHCMHQ3N5ig",
+  "rakuten": "https://a.r10.to/hg50Ww",
+  "official": "https://www.switchbot.jp/products/homerunpet-pet-blow-dryer",
+  "price": null
+ },
+ "labnote_08310907": {
+  "slug": "labnote_08310907",
+  "title": "AI無人運営レポート08/31〜09/07：再生+4855回、楽天クリックは-76回",
+  "product": "週次運営レポート",
+  "date": "2026-09-07",
+  "category": "運営レポート",
+  "youtube": "",
+  "rakuten": "",
+  "official": ""
  }
 }
