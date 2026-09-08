@@ -348,5 +348,27 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "pet_dryer_house": {
+  "slug": "pet_dryer_house",
+  "title": "homerunPET Dryboペットドライヤーハウスの特徴と仕様まとめ",
+  "product": "homerunPET Dryboシリーズ ペットドライヤーハウス",
+  "date": "2026-09-07",
+  "category": "ペット",
+  "youtube": "g8wHnzji8AY",
+  "rakuten": "https://a.r10.to/h5AsOQ",
+  "official": "https://www.switchbot.jp/products/homerunpet-drybo",
+  "price": null
+ },
+ "nebula_capsule_air": {
+  "slug": "nebula_capsule_air",
+  "title": "Nebula Capsule Air レビュー｜缶サイズで最大100インチ投影",
+  "product": "Nebula Capsule Air",
+  "date": "2026-09-07",
+  "category": "映像・音響",
+  "youtube": "VW-htS-zB0g",
+  "rakuten": "",
+  "official": "https://www.ankerjapan.com/products/d4112",
+  "price": null
  }
 }
