@@ -370,5 +370,27 @@
   "rakuten": "",
   "official": "https://www.ankerjapan.com/products/d4112",
   "price": null
+ },
+ "switchbot_roller_shade": {
+  "slug": "switchbot_roller_shade",
+  "title": "SwitchBotロールスクリーン｜自動で上がる電動遮光スクリーン",
+  "product": "SwitchBot ロールスクリーン",
+  "date": "2026-09-08",
+  "category": "スマートホーム",
+  "youtube": "XCthR0PUBdY",
+  "rakuten": "",
+  "official": "https://www.switchbot.jp/products/switchbot-roller-shade",
+  "price": null
+ },
+ "anker_power_strip_clamp": {
+  "slug": "anker_power_strip_clamp",
+  "title": "Anker Nano Power Strip徹底解説|机に挟む10in1電源タップ",
+  "product": "Anker Nano Power Strip (10-in-1, 70W, クランプ式)",
+  "date": "2026-09-08",
+  "category": "充電・電源",
+  "youtube": "m3kEUFH6C7o",
+  "rakuten": "",
+  "official": "https://www.ankerjapan.com/products/a9196",
+  "price": null
  }
 }
