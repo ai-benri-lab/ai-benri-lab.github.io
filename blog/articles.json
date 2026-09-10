@@ -392,5 +392,27 @@
   "rakuten": "",
   "official": "https://www.ankerjapan.com/products/a9196",
   "price": null
+ },
+ "smart_video_doorbell": {
+  "slug": "smart_video_doorbell",
+  "title": "SwitchBot スマートテレビドアホン｜留守でも自動応答の後付け玄関",
+  "product": "SwitchBot スマートテレビドアホン",
+  "date": "2026-09-09",
+  "category": "スマートホーム",
+  "youtube": "rsWGh4kmJVE",
+  "rakuten": "https://a.r10.to/hYgqzx",
+  "official": "https://www.switchbot.jp/products/switchbot-smart-video-doorbell",
+  "price": null
+ },
+ "soundcore_rave_3s": {
+  "slug": "soundcore_rave_3s",
+  "title": "Soundcore Rave 3S徹底解説|200W重低音とAIボーカル分離",
+  "product": "Soundcore Rave 3S",
+  "date": "2026-09-09",
+  "category": "映像・音響",
+  "youtube": "En5yK5XVutY",
+  "rakuten": "https://a.r10.to/hYKXs3",
+  "official": "https://www.ankerjapan.com/products/a31a3012",
+  "price": null
  }
 }
