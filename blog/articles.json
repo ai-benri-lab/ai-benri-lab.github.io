@@ -414,5 +414,27 @@
   "rakuten": "https://a.r10.to/hYKXs3",
   "official": "https://www.ankerjapan.com/products/a31a3012",
   "price": null
+ },
+ "eufy_smarttrack_card": {
+  "slug": "eufy_smarttrack_card",
+  "title": "Eufy SmartTrack Card E40の特徴｜カード型紛失防止トラッカー",
+  "product": "Eufy SmartTrack Card E40",
+  "date": "2026-09-10",
+  "category": "スマートホーム",
+  "youtube": "KKJbsxqkanc",
+  "rakuten": "https://a.r10.to/h5M4HN",
+  "official": "https://www.ankerjapan.com/products/t87b3",
+  "price": null
+ },
+ "switchbot_bot_finger_robot": {
+  "slug": "switchbot_bot_finger_robot",
+  "title": "SwitchBot ボットとは？指を貼るだけでスイッチ自動化",
+  "product": "SwitchBot ボット",
+  "date": "2026-09-10",
+  "category": "スマートホーム",
+  "youtube": "4RzlBbHyQi8",
+  "rakuten": "https://a.r10.to/h8lXyS",
+  "official": "https://www.switchbot.jp/products/switchbot-bot",
+  "price": null
  }
 }
