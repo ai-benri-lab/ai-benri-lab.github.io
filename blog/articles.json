@@ -436,5 +436,27 @@
   "rakuten": "https://a.r10.to/h8lXyS",
   "official": "https://www.switchbot.jp/products/switchbot-bot",
   "price": null
+ },
+ "homerunpet_smart_pet_feeder": {
+  "slug": "homerunpet_smart_pet_feeder",
+  "title": "homerunPETスマートペットフィーダー自動給餌器レビュー",
+  "product": "homerunPET スマートペットフィーダー 自動給餌器",
+  "date": "2026-09-11",
+  "category": "ペット",
+  "youtube": "25vdy4hkmn4",
+  "rakuten": "https://a.r10.to/h5L2Pu",
+  "official": "https://www.switchbot.jp/products/homerunpet-smart-pet-feeder",
+  "price": null
+ },
+ "eufy_video_doorbell_e340": {
+  "slug": "eufy_video_doorbell_e340",
+  "title": "Eufy Video Doorbell E340 徹底解説|来客を顔まで確認できるドアホン",
+  "product": "Eufy Video Doorbell E340",
+  "date": "2026-09-11",
+  "category": "映像・音響",
+  "youtube": "hIm8xX-J23k",
+  "rakuten": "https://a.r10.to/hFCaAX",
+  "official": "https://www.ankerjapan.com/products/t8214",
+  "price": null
  }
 }
