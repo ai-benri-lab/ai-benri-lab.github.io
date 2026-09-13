@@ -458,5 +458,27 @@
   "rakuten": "https://a.r10.to/hFCaAX",
   "official": "https://www.ankerjapan.com/products/t8214",
   "price": null
+ },
+ "anker_powerbag_2026": {
+  "slug": "anker_powerbag_2026",
+  "title": "Anker PowerBag 2026レビュー｜バッグ型大容量バッテリー",
+  "product": "Anker PowerBag 2026",
+  "date": "2026-09-12",
+  "category": "充電・電源",
+  "youtube": "NXoU1an4xtk",
+  "rakuten": "https://a.r10.to/h5W7B3",
+  "official": "https://www.ankerjapan.com/products/anker-powerbag-2026",
+  "price": null
+ },
+ "switchbot_daily_station": {
+  "slug": "switchbot_daily_station",
+  "title": "SwitchBotスマートデイリーステーション徹底解説",
+  "product": "SwitchBot スマートデイリーステーション",
+  "date": "2026-09-12",
+  "category": "スマートホーム",
+  "youtube": "DKrBxW3Eaxg",
+  "rakuten": "https://a.r10.to/T3PPhk",
+  "official": "https://www.switchbot.jp/products/switchbot-weather-station",
+  "price": null
  }
 }
