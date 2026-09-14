@@ -480,5 +480,37 @@
   "rakuten": "https://a.r10.to/T3PPhk",
   "official": "https://www.switchbot.jp/products/switchbot-weather-station",
   "price": null
+ },
+ "soundcore_aeroclip": {
+  "slug": "soundcore_aeroclip",
+  "title": "Soundcore AeroClipレビュー｜耳を挟む新型オープンイヤホン",
+  "product": "Soundcore AeroClip",
+  "date": "2026-09-13",
+  "category": "映像・音響",
+  "youtube": "VW8XiG6S3QE",
+  "rakuten": "https://a.r10.to/h5Le0s",
+  "official": "https://www.ankerjapan.com/products/a3388",
+  "price": null
+ },
+ "eufy_video_doorbell_chime2": {
+  "slug": "eufy_video_doorbell_chime2",
+  "title": "Eufy Video Doorbell Chime 2の特徴と仕様まとめ",
+  "product": "Eufy Video Doorbell Chime 2",
+  "date": "2026-09-13",
+  "category": "映像・音響",
+  "youtube": "fzCBYolGsRw",
+  "rakuten": "https://a.r10.to/hFCSgx",
+  "official": "https://www.ankerjapan.com/products/t8026",
+  "price": null
+ },
+ "labnote_09070914": {
+  "slug": "labnote_09070914",
+  "title": "【09/07〜09/14】再生+2446も売上0円の週｜全自動メディア実録",
+  "product": "週次運営レポート",
+  "date": "2026-09-14",
+  "category": "運営レポート",
+  "youtube": "",
+  "rakuten": "",
+  "official": ""
  }
 }
