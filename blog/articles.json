@@ -512,5 +512,49 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "switchbot_outdoor_pantilt_camera": {
+  "slug": "switchbot_outdoor_pantilt_camera",
+  "title": "SwitchBot 屋外パンチルトカメラ5MPの特徴と仕様まとめ",
+  "product": "SwitchBot 屋外パンチルトカメラ5MP",
+  "date": "2026-09-14",
+  "category": "映像・音響",
+  "youtube": "b5tZk6GgITc",
+  "rakuten": "https://a.r10.to/h8alqg",
+  "official": "https://www.switchbot.jp/products/switchbot-outdoor-pan-tilt-cam-5mp",
+  "price": null
+ },
+ "anker_3in1_cube_qi2": {
+  "slug": "anker_3in1_cube_qi2",
+  "title": "Anker 3-in-1 Cube with Qi2レビュー｜折りたたみ3in1充電器",
+  "product": "Anker 3-in-1 Cube with Qi2",
+  "date": "2026-09-14",
+  "category": "充電・電源",
+  "youtube": "50Aq0cIqp5I",
+  "rakuten": "https://a.r10.to/hgfQRw",
+  "official": "https://www.ankerjapan.com/products/y1812h21",
+  "price": null
+ },
+ "soundcore_rave_3": {
+  "slug": "soundcore_rave_3",
+  "title": "Soundcore Rave 3 レビュー｜光る大音量カラオケスピーカー",
+  "product": "Soundcore Rave 3",
+  "date": "2026-09-15",
+  "category": "映像・音響",
+  "youtube": "XxKehclrvRs",
+  "rakuten": "https://a.r10.to/hYQx1t",
+  "official": "https://www.ankerjapan.com/products/a31a3",
+  "price": null
+ },
+ "homerunpet_water_fountain": {
+  "slug": "homerunpet_water_fountain",
+  "title": "homerunPETペットウォーターファウンテン｜循環式自動給水器",
+  "product": "homerunPET ペットウォーターファウンテン",
+  "date": "2026-09-15",
+  "category": "ペット",
+  "youtube": "_QKM1vnEYwk",
+  "rakuten": "https://a.r10.to/h5odot",
+  "official": "https://www.switchbot.jp/products/pet-water-fountain-with-wireless-pump",
+  "price": null
  }
 }
