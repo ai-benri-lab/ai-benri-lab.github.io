@@ -556,5 +556,27 @@
   "rakuten": "https://a.r10.to/h5odot",
   "official": "https://www.switchbot.jp/products/pet-water-fountain-with-wireless-pump",
   "price": null
+ },
+ "switchbot_sensor_light_set": {
+  "slug": "switchbot_sensor_light_set",
+  "title": "SwitchBotセンサーライトセットで玄関を自動点灯",
+  "product": "SwitchBot センサーライトセット",
+  "date": "2026-09-17",
+  "category": "照明",
+  "youtube": "JMv0lp3oDME",
+  "rakuten": "https://a.r10.to/hPNsXB",
+  "official": "https://www.switchbot.jp/products/sensor-light-set",
+  "price": null
+ },
+ "switchbot_lock_ultra_fingerprint_set": {
+  "slug": "switchbot_lock_ultra_fingerprint_set",
+  "title": "SwitchBotドアロックUltra指紋認証セット｜指紋で開くスマートロック",
+  "product": "SwitchBot ドアロックUltra 指紋認証セット",
+  "date": "2026-09-17",
+  "category": "スマートホーム",
+  "youtube": "9YPhtu6unuc",
+  "rakuten": "https://a.r10.to/h5jdY8",
+  "official": "https://www.switchbot.jp/products/switchbot-lock-ultra-touch-combo",
+  "price": null
  }
 }
