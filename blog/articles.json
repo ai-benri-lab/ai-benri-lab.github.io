@@ -578,5 +578,27 @@
   "rakuten": "https://a.r10.to/h5jdY8",
   "official": "https://www.switchbot.jp/products/switchbot-lock-ultra-touch-combo",
   "price": null
+ },
+ "eufy_solocam_s340_kit": {
+  "slug": "eufy_solocam_s340_kit",
+  "title": "Eufy SoloCam S340レビュー｜配線不要ソーラー追尾カメラ",
+  "product": "Eufy SoloCam S340 1-Cam Kit",
+  "date": "2026-09-18",
+  "category": "スマートホーム",
+  "youtube": "HHblAzZV8L4",
+  "rakuten": "https://a.r10.to/h5GFNm",
+  "official": "https://www.ankerjapan.com/products/e8170",
+  "price": null
+ },
+ "anker_portable_power_station_1000": {
+  "slug": "anker_portable_power_station_1000",
+  "title": "Portable Power Station 1000で停電対策｜大容量ポータブル電源",
+  "product": "Portable Power Station 1000",
+  "date": "2026-09-18",
+  "category": "充電・電源",
+  "youtube": "pJJ95XyANBs",
+  "rakuten": "https://a.r10.to/hkmVAQ",
+  "official": "https://www.ankerjapan.com/products/a1762",
+  "price": null
  }
 }
