@@ -622,5 +622,37 @@
   "rakuten": "https://a.r10.to/hYS5oC",
   "official": "https://www.ankerjapan.com/products/t86c1",
   "price": null
+ },
+ "switchbot_security_alarm": {
+  "slug": "switchbot_security_alarm",
+  "title": "SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー",
+  "product": "SwitchBot 防犯ブザー",
+  "date": "2026-09-20",
+  "category": "その他",
+  "youtube": "yBbwl-atheE",
+  "rakuten": "https://a.r10.to/h5oWuK",
+  "official": "https://www.switchbot.jp/products/switchbot-safety-alarm",
+  "price": null
+ },
+ "switchbot_k20_pro_home_robot": {
+  "slug": "switchbot_k20_pro_home_robot",
+  "title": "SwitchBotロボットK20＋Proとは｜掃除・空気清浄・見守りを1台に",
+  "product": "SwitchBot マルチタスク家庭用ロボットK20＋Pro",
+  "date": "2026-09-20",
+  "category": "スマートホーム",
+  "youtube": "I8fkxfJl0E4",
+  "rakuten": "",
+  "official": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-k20-pro",
+  "price": null
+ },
+ "labnote_09140921": {
+  "slug": "labnote_09140921",
+  "title": "AIべんりラボ週報0914-0921｜再生+2751でも成果0件",
+  "product": "週次運営レポート",
+  "date": "2026-09-21",
+  "category": "運営レポート",
+  "youtube": "",
+  "rakuten": "",
+  "official": ""
  }
 }

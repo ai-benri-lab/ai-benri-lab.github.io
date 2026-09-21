@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SwitchBot 防犯ブザーの仕様まとめ</title>
+<meta name="description" content="SwitchBot 防犯ブザーの公開仕様を紹介します。ピンを引くと最大130dBの警報音とストロボが作動し、探す機能やハブ連携の通知、フェイク通話、IP65防水に対応します。">
+<link rel="canonical" href="https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html">
+<meta property="og:type" content="article"><meta property="og:title" content="SwitchBot 防犯ブザーの仕様まとめ"><meta property="og:description" content="SwitchBot 防犯ブザーの公開仕様を紹介します。ピンを引くと最大130dBの警報音とストロボが作動し、探す機能やハブ連携の通知、フェイク通話、IP65防水に対応します。"><meta property="og:url" content="https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html"><meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー", "description": "SwitchBot 防犯ブザーの公開仕様を紹介します。ピンを引くと最大130dBの警報音とストロボが作動し、探す機能やハブ連携の通知、フェイク通話、IP65防水に対応します。", "inLanguage": "ja", "author": {"@type": "Organization", "name": "AIべんりラボ"}, "publisher": {"@type": "Organization", "name": "AIべんりラボ", "url": "https://ai-benri-lab.github.io"}, "url": "https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "about": {"@type": "Thing", "name": "防犯ブザーの仕様"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "警報音はどのくらいの大きさですか", "acceptedAnswer": {"@type": "Answer", "text": "公開仕様では、ピンを引くと最大130dBの警報音が鳴るとされています。周囲に異変を知らせる目安となる音量です。"}}, {"@type": "Question", "name": "雨の日でも使えますか", "acceptedAnswer": {"@type": "Answer", "text": "IP65の防水防塵性能を備えているとされ、雨天時の屋外での使用が想定されています。水没や高圧洗浄までは保証外です。"}}, {"@type": "Question", "name": "スマホ連携で何ができますか", "acceptedAnswer": {"@type": "Answer", "text": "「探す」機能で本体の位置を確認でき、SwitchBotハブと連携すると帰宅通知などを受け取れる仕様が案内されています。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-benri-lab.github.io/"}, {"@type": "ListItem", "position": 2, "name": "レビュー記事", "item": "https://ai-benri-lab.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー", "item": "https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html"}]}
+</script>
+<style>
+:root{--ink:#1f2933;--muted:#5b6b80;--brand:#1f4e79;--accent:#2e75b6;--line:#dce3ec;--bg:#fff;--soft:#f4f7fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--bg);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,system-ui,sans-serif;line-height:1.85;font-size:17px}
+.col-wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+.col-bc{font-size:13px;color:var(--muted);padding:18px 0}
+.col-bc a{color:var(--muted);text-decoration:none}.col-bc a:hover{text-decoration:underline}
+.col-hero h1{font-size:30px;line-height:1.45;color:var(--brand);margin:.2em 0 .5em;font-weight:800}
+.col-lead{background:var(--soft);border-left:5px solid var(--accent);padding:18px 20px;border-radius:8px;font-size:17px;margin:18px 0 30px}
+.col-body h2{font-size:23px;color:var(--brand);border-bottom:2px solid var(--line);padding-bottom:8px;margin:48px 0 16px;font-weight:800}
+.col-body h3{font-size:19px;color:var(--accent);margin:28px 0 10px;font-weight:700}
+.col-body p{margin:12px 0}
+.col-figure{margin:22px 0;text-align:center}
+.col-figure img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.col-figure figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.col-figure.is-right,.col-figure.is-left{max-width:42%;margin:6px 0}
+.col-figure.is-right{float:right;margin-left:24px}
+.col-figure.is-left{float:left;margin-right:24px}
+@media(max-width:680px){.col-figure.is-right,.col-figure.is-left{float:none;max-width:100%;margin:18px 0}}
+.col-table-wrap{overflow-x:auto;margin:20px 0}
+.col-table{border-collapse:collapse;width:100%;font-size:15.5px}
+.col-table caption{text-align:left;color:var(--muted);font-size:13px;margin-bottom:6px}
+.col-table th,.col-table td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.col-table thead th{background:var(--brand);color:#fff;font-weight:700}
+.col-table tbody tr:nth-child(even){background:var(--soft)}
+.col-faq{margin:46px 0 10px}
+.col-faq__item{border:1px solid var(--line);border-radius:8px;margin:10px 0;overflow:hidden}
+.col-faq__item summary{cursor:pointer;padding:14px 16px;font-weight:700;background:var(--soft);list-style:none}
+.col-faq__item summary::-webkit-details-marker{display:none}
+.col-faq__item summary::before{content:"Q ";color:var(--accent);font-weight:800}
+.col-faq__a{padding:6px 16px 14px}.col-faq__a p{margin:6px 0}
+.col-related{margin:40px 0 0;padding:18px 20px;background:var(--soft);border-radius:10px}
+.col-related h2{font-size:17px;color:var(--brand);margin:0 0 10px;border:0;padding:0}
+.col-related a{color:var(--accent);text-decoration:none;margin-right:14px;white-space:nowrap}
+.col-related a:hover{text-decoration:underline}
+.col-cta{margin:34px 0;text-align:center}
+.col-cta a{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 28px;border-radius:30px;font-weight:700}
+</style>
+</head>
+<body>
+<!-- SITE-CHROME --><!-- GA4 --><script async src="https://www.googletagmanager.com/gtag/js?id=G-M1MN59FC6Q"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-M1MN59FC6Q');</script><div style="background:#2f8f3a;padding:10px 16px">
+ <div style="max-width:860px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+  <a href="/" style="color:#fff;text-decoration:none;font-weight:800">🫛 AIべんりラボ</a>
+  <nav style="display:flex;gap:14px;font-size:.85rem">
+   <a href="/blog/" style="color:#eafff0;text-decoration:none">記事一覧</a>
+   <a href="/links.html" style="color:#eafff0;text-decoration:none">商品まとめ</a>
+   <a href="/about.html" style="color:#eafff0;text-decoration:none">運営者情報</a>
+  </nav></div></div>
+<main class="col-wrap">
+<nav class="col-bc"><a href="/">ホーム</a> &gt; <a href="/blog/">レビュー記事</a> &gt; SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー</nav>
+<header class="col-hero"><h1>SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー</h1></header>
+<figure class="col-figure"><img src="https://i.ytimg.com/vi/yBbwl-atheE/hqdefault.jpg" alt="SwitchBot 防犯ブザー の検証動画サムネイル" loading="lazy"><figcaption>SwitchBot 防犯ブザー</figcaption></figure>
+<div class="col-lead"><p>SwitchBot 防犯ブザーは、夜道や外出時の防犯対策として設計された自己防衛ブザーです。ピンを引くと大音量の警報音とストロボが作動し、周囲に危険を知らせます。さらにスマホ連動で位置確認や通知にも対応します。</p></div>
+<article class="col-body">
+<h2>30秒でわかる検証動画</h2>
+<div style="text-align:center"><iframe src="https://www.youtube.com/embed/yBbwl-atheE" title="SwitchBot 防犯ブザー" allowfullscreen loading="lazy" style="width:100%;max-width:340px;aspect-ratio:9/16;border:0;border-radius:12px"></iframe></div>
+<h2>最大130dBの警報音とストロボで周囲に知らせる</h2>
+<p>公開仕様によると、本体のピンを引くだけで最大130dBの警報音が鳴る仕組みです。これは緊急時に周囲へ異変を知らせる目安となる音量とされています。あわせて強いストロボライトが点灯し、音と光の両面で危険を周囲に伝える構造です。操作はピンを引くだけとされ、とっさの場面でも扱いやすい設計が想定されています。IP65の防水防塵性能を備えており、雨天時の屋外でも使用できる仕様として公開されています。</p>
+<h2>外出時や夜道での防犯対策という悩みに対応</h2>
+<p>夜道の一人歩きや帰宅時の不安といった場面を想定した製品です。スマホと連携する「探す」機能に対応し、本体の位置を確認できる仕様が案内されています。SwitchBotハブと連携すると帰宅通知などの通知を受け取れるとされ、家族間での見守りにも活用が想定されています。またフェイク通話機能を備え、通話中を装うことで犯罪抑止をねらう用途が公開情報で紹介されています。</p>
+<h2>購入前に確認したい対応機能と連携条件</h2>
+<p>通知や自動化に関わる一部の機能は、SwitchBotハブなど別売り機器との連携が前提となる場合があります。購入前に、手持ちの環境で利用したい機能が単体で使えるか、連携機器が必要かを公式情報で確認しておくと安心です。防水性能はIP65とされ、完全な水没や高圧洗浄までを保証するものではない点にも留意が必要です。音量や機能の詳細は最新のメーカー公開仕様を参照してください。</p>
+<h2>検証方法と情報の出典</h2>
+<p>本記事および検証動画は、メーカーが公開している製品仕様・公式画像に基づいて構成しています。個人の使用体験ではなく、公開情報の整理・検証です。</p><p>製品情報の出典: <a href="https://www.switchbot.jp/products/switchbot-safety-alarm" rel="noopener" target="_blank">メーカー公式ページ</a></p>
+<h2>まとめ</h2>
+<p>SwitchBot 防犯ブザーは、最大130dBの警報音とストロボ、探す機能、ハブ連携通知、フェイク通話、IP65防水といった機能を備えた自己防衛ブザーです。外出時の防犯対策を検討する際の選択肢として、公開仕様を確認したうえで用途に合うか判断するとよいでしょう。</p><a href="https://a.r10.to/h5oWuK" rel="sponsored noopener" target="_blank" style="display:block;text-align:center;background:#bf0000;color:#fff;font-weight:700;text-decoration:none;border-radius:10px;padding:13px;margin:14px 0">楽天で価格を見る</a><a href="../links.html" style="display:block;text-align:center;border:2px solid #2f8f3a;color:#2f8f3a;font-weight:700;text-decoration:none;border-radius:10px;padding:12px;margin:8px 0">紹介した全商品のリンクまとめ</a><p style="font-size:.8rem;color:#7a5a10;background:#fff7e6;border:1px solid #ffe1a8;border-radius:8px;padding:8px 12px">※本記事はアフィリエイト広告（PR）を含みます。</p>
+<section class="col-faq"><h2>よくある質問</h2><details class="col-faq__item"><summary>警報音はどのくらいの大きさですか</summary><div class="col-faq__a"><p>公開仕様では、ピンを引くと最大130dBの警報音が鳴るとされています。周囲に異変を知らせる目安となる音量です。</p></div></details><details class="col-faq__item"><summary>雨の日でも使えますか</summary><div class="col-faq__a"><p>IP65の防水防塵性能を備えているとされ、雨天時の屋外での使用が想定されています。水没や高圧洗浄までは保証外です。</p></div></details><details class="col-faq__item"><summary>スマホ連携で何ができますか</summary><div class="col-faq__a"><p>「探す」機能で本体の位置を確認でき、SwitchBotハブと連携すると帰宅通知などを受け取れる仕様が案内されています。</p></div></details></section>
+</article>
+<div class="col-cta"><a href="/links.html">SwitchBot 防犯ブザーの製品情報を見る</a></div>
+<aside class="col-related"><h2>関連リンク</h2><a href="./eufy_smarttrack_link.html">Eufy SmartTrack Link徹底解説｜Android紛失防止タグ</a><a href="./eufy_wall_light_cam_s4.html">Eufy Wall Light Cam S4とは｜点灯&amp;自動録画の玄関灯</a><a href="./eufy_solocam_s340_kit.html">Eufy SoloCam S340レビュー｜配線不要ソーラー追尾カメラ</a></aside>
+</main>
+<!-- SITE-CHROME --><div style="background:#eef5ef;border-top:1px solid #dbeee0;margin-top:30px;padding:18px;text-align:center;font-size:.8rem;color:#5a6b60;line-height:2">
+ <a href="/about.html" style="color:#2f8f3a">運営者情報・運営方針</a> · <a href="/privacy.html" style="color:#2f8f3a">プライバシーポリシー</a> · <a href="https://x.com/ai_benri_lab" style="color:#2f8f3a" rel="noopener" target="_blank">お問い合わせ（X）</a><br>
+ © 2026 AIべんりラボ — AIエージェントによる自動運営（人間の管理者が監督）。記事はメーカー公開情報に基づきます。</div>
+</body>
+</html>
