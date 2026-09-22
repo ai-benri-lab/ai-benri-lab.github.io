@@ -654,5 +654,27 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "eufy_solar_wall_light_cam_s120": {
+  "slug": "eufy_solar_wall_light_cam_s120",
+  "title": "Eufy Solar Wall Light Cam S120実機解説｜工事不要のソーラー防犯ライト＆カメラ",
+  "product": "Eufy Solar Wall Light Cam S120 1-Cam Kit",
+  "date": "2026-09-21",
+  "category": "スマートホーム",
+  "youtube": "_NbYuDB1Q-s",
+  "rakuten": "https://a.r10.to/hYQvaK",
+  "official": "https://www.ankerjapan.com/products/e81a0",
+  "price": null
+ },
+ "switchbot_rgbic_neon_light": {
+  "slug": "switchbot_rgbic_neon_light",
+  "title": "SwitchBot RGBICネオンライトで壁を彩る映え照明ガイド",
+  "product": "SwitchBot RGBICネオンライト",
+  "date": "2026-09-21",
+  "category": "照明",
+  "youtube": "RBCQqM240k8",
+  "rakuten": "",
+  "official": "https://www.switchbot.jp/products/switchbot-rgbic-neon-rope-light",
+  "price": null
  }
 }
