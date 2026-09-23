@@ -354,9 +354,12 @@ def _stats_panel(pub: dict) -> str:
         return f"{v:,}" if isinstance(v, (int, float)) else "—"
 
     def d(v):
-        if not isinstance(v, (int, float)):
+        # 負値に + を付けて "+-76/週" と表示していた（月初リセットの差分で実際に出た）。
+        # 0 と算出不能(None)はバッジ自体を出さない＝増減に触れない。
+        if not isinstance(v, (int, float)) or v == 0:
             return ""
-        return f'<span style="color:#5ec8a0;font-size:.72rem">+{v:,}/週</span>'
+        color = "#5ec8a0" if v > 0 else "#d98a8a"
+        return f'<span style="color:{color};font-size:.72rem">{v:+,}/週</span>'
 
     tiles = [
         ("YouTube 総再生", n(pub.get("yt_views_total")), d(pub.get("yt_views_delta"))),
