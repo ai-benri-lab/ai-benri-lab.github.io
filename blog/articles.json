@@ -676,5 +676,27 @@
   "rakuten": "",
   "official": "https://www.switchbot.jp/products/switchbot-rgbic-neon-rope-light",
   "price": null
+ },
+ "eufy_smarttrack_card_tracker": {
+  "slug": "eufy_smarttrack_card_tracker",
+  "title": "Eufy SmartTrack Card徹底紹介｜Android対応の薄型紛失防止カード",
+  "product": "Eufy SmartTrack Card (Android用)",
+  "date": "2026-09-22",
+  "category": "スマートホーム",
+  "youtube": "zRhxmgtPxcA",
+  "rakuten": "https://a.r10.to/hgxIE1",
+  "official": "https://www.ankerjapan.com/products/t87b5",
+  "price": null
+ },
+ "eufymake_uv_printer_flatbed": {
+  "slug": "eufymake_uv_printer_flatbed",
+  "title": "EufyMakeフラットベッド 素材を選ばず印刷できるUVプリンター",
+  "product": "EufyMake フラットベッド (標準)",
+  "date": "2026-09-22",
+  "category": "その他",
+  "youtube": "XFDSWxSKg0Q",
+  "rakuten": "https://a.r10.to/hY5X7H",
+  "official": "https://www.ankerjapan.com/products/v72j0",
+  "price": null
  }
 }
