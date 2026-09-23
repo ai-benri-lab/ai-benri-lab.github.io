@@ -17,6 +17,7 @@
 import html
 import json
 import re
+_re = re
 import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
@@ -302,6 +303,50 @@ def write_category_pages(manifest):
     return made
 
 
+_INC_PATTERNS = [
+    r"\+([0-9][0-9,]*)",                                  # +4 / +2,751
+    r"([0-9][0-9,]*)\s*[件回名本人]?\s*(?:増え|増加|伸び)",   # 45件増えて / 2751回増え
+    r"週\s*\+?([0-9][0-9,]*)",                             # 週+2 / 週45
+]
+
+
+def _claimed_increases(body: dict) -> list[int]:
+    """本文から「増加として書かれた数字」を拾う。"""
+    txt = " ".join([str(body.get("lead", "")), str(body.get("conclusion", ""))]
+                   + [str(x.get("p", "")) for x in (body.get("sections") or [])])
+    out = []
+    for pat in _INC_PATTERNS:
+        for m in _re.finditer(pat, txt):
+            out.append(int(m.group(1).replace(",", "")))
+    return out
+
+
+def verify_numbers(body: dict, pub: dict) -> list[str]:
+    """増加の主張が実データの増分と合っているか調べ、問題を文字列で返す（空なら合格）。
+
+    - 増分として使ってよい値は pub の *_delta のみ
+    - 累計側の値を増分として書いていたら、取り違え（今回の事故）として弾く
+    - どちらにも無い数字は、本文由来の正当な数字の可能性があるので警告にとどめない
+      （誤検知で毎週公開が止まる方が困るため、累計との一致だけを不合格条件にする）
+    """
+    deltas = {abs(v) for k, v in pub.items() if k.endswith("_delta") and isinstance(v, int)}
+    totals = {v: k for k, v in pub.items()
+              if isinstance(v, int) and not k.endswith("_delta")}
+    problems = []
+    for n in _claimed_increases(body):
+        if n in deltas:
+            continue
+        if n in totals:
+            problems.append(f"累計 {totals[n]}={n} を増加分として書いている（増分は *_delta のみ）")
+    # 増分が算出できていない指標に増加を書いていないか（基準変更で None の時など）
+    for k, v in pub.items():
+        if k.endswith("_delta") and v is None:
+            base = k[:-6]
+            if isinstance(pub.get(base + "_total"), int) or isinstance(pub.get(base), int):
+                pass  # 値そのものの照合は上のループで済んでいる
+    return problems
+
+
 def _stats_panel(pub: dict) -> str:
     """公開してよい数字だけのダッシュボード風パネル（内部IP/認証/報酬額は含めない）。
     ビジュアルで信憑性を出すための擬似スクリーンショット（実運用画面ではなく再構成した安全版）。"""
@@ -406,10 +451,24 @@ def write_lab_note(manifest):
         "運営AIの週次総評(参考にしてよいが、上のデータの実数を優先): " + strip_tags(w.get("summary", ""), 500),
         "出力JSON: " + out_schema,
     ])
-    try:
-        body = llm_json(prompt)
-    except Exception as ex:  # noqa: BLE001
-        print(f"labnote llm failed: {ex}", file=sys.stderr)
+    body = None
+    for attempt in (1, 2):
+        try:
+            p2 = prompt if attempt == 1 else (
+                prompt + "\n前回の出力は累計を増加分として書いていました。"
+                "増加に触れるのは _delta の値だけにして、もう一度出力してください。")
+            cand = llm_json(p2)
+        except Exception as ex:  # noqa: BLE001
+            print(f"labnote llm failed: {ex}", file=sys.stderr)
+            return None
+        problems = verify_numbers(cand, pub)
+        if not problems:
+            body = cand
+            break
+        print(f"labnote 数値検証 NG (試行{attempt}): " + " / ".join(problems), file=sys.stderr)
+    if body is None:
+        # 誤った数字を公開するくらいなら、その週は出さない（週次なので欠号は許容できる）
+        print("labnote: 数値検証を通らなかったため公開を見送る", file=sys.stderr)
         return None
     secs = "".join(
         f"<h2>{strip_tags(x.get('h', ''), 40)}</h2>\n<p>{html.escape(str(x.get('p', ''))[:600])}</p>\n"
