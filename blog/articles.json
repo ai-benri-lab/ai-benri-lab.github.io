@@ -698,5 +698,27 @@
   "rakuten": "https://a.r10.to/hY5X7H",
   "official": "https://www.ankerjapan.com/products/v72j0",
   "price": null
+ },
+ "eufy_4g_lte_cam_s330": {
+  "slug": "eufy_4g_lte_cam_s330",
+  "title": "Eufy 4G LTE Cam S330とは？Wi-Fi不要の4K防犯カメラ",
+  "product": "Eufy 4G LTE Cam S330",
+  "date": "2026-09-23",
+  "category": "スマートホーム",
+  "youtube": "Na0n9U2ypQQ",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft86p2%2F",
+  "official": "https://www.ankerjapan.com/products/t86p2",
+  "price": null
+ },
+ "switchbot_water_leak_sensor": {
+  "slug": "switchbot_water_leak_sensor",
+  "title": "SwitchBot水漏れセンサーとは？仕様と機能まとめ",
+  "product": "SwitchBot 水漏れセンサー",
+  "date": "2026-09-23",
+  "category": "スマートホーム",
+  "youtube": "cheBjsgFJgU",
+  "rakuten": "https://a.r10.to/hg9Uaf",
+  "official": "https://www.switchbot.jp/products/switchbot-water-leak-detector",
+  "price": null
  }
 }
