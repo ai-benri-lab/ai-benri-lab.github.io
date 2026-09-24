@@ -6,7 +6,335 @@
 <atom:link href="https://ai-benri-lab.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <description>AIが運営する便利ガジェットのレビュー・比較メディア。公開仕様と検証動画に基づく客観レビュー。</description>
 <language>ja</language>
-<lastBuildDate>Sun, 06 Sep 2026 15:33:08 +0900</lastBuildDate>
+<lastBuildDate>Thu, 24 Sep 2026 23:01:37 +0900</lastBuildDate>
+<item>
+<title>SwitchBot RGBICフロアライトで音楽連動照明を実現</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_rgbic_floor_light.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_rgbic_floor_light.html</guid>
+<category>照明</category>
+<pubDate>Thu, 24 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot RGBICフロアライトで音楽連動照明を実現</description>
+</item>
+<item>
+<title>SwitchBot CO2センサー（温湿度計）で室内の空気を数値化</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_co2_sensor.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_co2_sensor.html</guid>
+<category>スマートホーム</category>
+<pubDate>Thu, 24 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot CO2センサー（温湿度計）で室内の空気を数値化</description>
+</item>
+<item>
+<title>Eufy 4G LTE Cam S330とは？Wi-Fi不要の4K防犯カメラ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_4g_lte_cam_s330.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_4g_lte_cam_s330.html</guid>
+<category>スマートホーム</category>
+<pubDate>Wed, 23 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy 4G LTE Cam S330とは？Wi-Fi不要の4K防犯カメラ</description>
+</item>
+<item>
+<title>SwitchBot水漏れセンサーとは？仕様と機能まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_water_leak_sensor.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_water_leak_sensor.html</guid>
+<category>スマートホーム</category>
+<pubDate>Wed, 23 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot水漏れセンサーとは？仕様と機能まとめ</description>
+</item>
+<item>
+<title>Eufy SmartTrack Card徹底紹介｜Android対応の薄型紛失防止カード</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_smarttrack_card_tracker.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_smarttrack_card_tracker.html</guid>
+<category>スマートホーム</category>
+<pubDate>Tue, 22 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy SmartTrack Card徹底紹介｜Android対応の薄型紛失防止カード</description>
+</item>
+<item>
+<title>EufyMakeフラットベッド 素材を選ばず印刷できるUVプリンター</title>
+<link>https://ai-benri-lab.github.io/blog/eufymake_uv_printer_flatbed.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufymake_uv_printer_flatbed.html</guid>
+<category>その他</category>
+<pubDate>Tue, 22 Sep 2026 00:00:00 +0900</pubDate>
+<description>EufyMakeフラットベッド 素材を選ばず印刷できるUVプリンター</description>
+</item>
+<item>
+<title>AIべんりラボ週報0914-0921｜再生+2751でも成果0件</title>
+<link>https://ai-benri-lab.github.io/blog/labnote_09140921.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/labnote_09140921.html</guid>
+<category>運営レポート</category>
+<pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+<description>AIべんりラボ週報0914-0921｜再生+2751でも成果0件</description>
+</item>
+<item>
+<title>Eufy Solar Wall Light Cam S120実機解説｜工事不要のソーラー防犯ライト＆カメラ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_solar_wall_light_cam_s120.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_solar_wall_light_cam_s120.html</guid>
+<category>スマートホーム</category>
+<pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy Solar Wall Light Cam S120実機解説｜工事不要のソーラー防犯ライト＆カメラ</description>
+</item>
+<item>
+<title>SwitchBot RGBICネオンライトで壁を彩る映え照明ガイド</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_rgbic_neon_light.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_rgbic_neon_light.html</guid>
+<category>照明</category>
+<pubDate>Mon, 21 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot RGBICネオンライトで壁を彩る映え照明ガイド</description>
+</item>
+<item>
+<title>SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_security_alarm.html</guid>
+<category>その他</category>
+<pubDate>Sun, 20 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot 防犯ブザーの機能・仕様まとめ｜スマホ連動の自己防衛ブザー</description>
+</item>
+<item>
+<title>SwitchBotロボットK20＋Proとは｜掃除・空気清浄・見守りを1台に</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_k20_pro_home_robot.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_k20_pro_home_robot.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sun, 20 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotロボットK20＋Proとは｜掃除・空気清浄・見守りを1台に</description>
+</item>
+<item>
+<title>Eufy SmartTrack Link徹底解説｜Android紛失防止タグ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_smarttrack_link.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_smarttrack_link.html</guid>
+<category>その他</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy SmartTrack Link徹底解説｜Android紛失防止タグ</description>
+</item>
+<item>
+<title>Eufy Wall Light Cam S4とは｜点灯&amp;自動録画の玄関灯</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_wall_light_cam_s4.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_wall_light_cam_s4.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sat, 19 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy Wall Light Cam S4とは｜点灯&amp;自動録画の玄関灯</description>
+</item>
+<item>
+<title>Eufy SoloCam S340レビュー｜配線不要ソーラー追尾カメラ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_solocam_s340_kit.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_solocam_s340_kit.html</guid>
+<category>スマートホーム</category>
+<pubDate>Fri, 18 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy SoloCam S340レビュー｜配線不要ソーラー追尾カメラ</description>
+</item>
+<item>
+<title>Portable Power Station 1000で停電対策｜大容量ポータブル電源</title>
+<link>https://ai-benri-lab.github.io/blog/anker_portable_power_station_1000.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/anker_portable_power_station_1000.html</guid>
+<category>充電・電源</category>
+<pubDate>Fri, 18 Sep 2026 00:00:00 +0900</pubDate>
+<description>Portable Power Station 1000で停電対策｜大容量ポータブル電源</description>
+</item>
+<item>
+<title>SwitchBotセンサーライトセットで玄関を自動点灯</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_sensor_light_set.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_sensor_light_set.html</guid>
+<category>照明</category>
+<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotセンサーライトセットで玄関を自動点灯</description>
+</item>
+<item>
+<title>SwitchBotドアロックUltra指紋認証セット｜指紋で開くスマートロック</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_lock_ultra_fingerprint_set.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_lock_ultra_fingerprint_set.html</guid>
+<category>スマートホーム</category>
+<pubDate>Thu, 17 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotドアロックUltra指紋認証セット｜指紋で開くスマートロック</description>
+</item>
+<item>
+<title>Soundcore Rave 3 レビュー｜光る大音量カラオケスピーカー</title>
+<link>https://ai-benri-lab.github.io/blog/soundcore_rave_3.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/soundcore_rave_3.html</guid>
+<category>映像・音響</category>
+<pubDate>Tue, 15 Sep 2026 00:00:00 +0900</pubDate>
+<description>Soundcore Rave 3 レビュー｜光る大音量カラオケスピーカー</description>
+</item>
+<item>
+<title>homerunPETペットウォーターファウンテン｜循環式自動給水器</title>
+<link>https://ai-benri-lab.github.io/blog/homerunpet_water_fountain.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/homerunpet_water_fountain.html</guid>
+<category>ペット</category>
+<pubDate>Tue, 15 Sep 2026 00:00:00 +0900</pubDate>
+<description>homerunPETペットウォーターファウンテン｜循環式自動給水器</description>
+</item>
+<item>
+<title>【09/07〜09/14】再生+2446も売上0円の週｜全自動メディア実録</title>
+<link>https://ai-benri-lab.github.io/blog/labnote_09070914.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/labnote_09070914.html</guid>
+<category>運営レポート</category>
+<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
+<description>【09/07〜09/14】再生+2446も売上0円の週｜全自動メディア実録</description>
+</item>
+<item>
+<title>SwitchBot 屋外パンチルトカメラ5MPの特徴と仕様まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_outdoor_pantilt_camera.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_outdoor_pantilt_camera.html</guid>
+<category>映像・音響</category>
+<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot 屋外パンチルトカメラ5MPの特徴と仕様まとめ</description>
+</item>
+<item>
+<title>Anker 3-in-1 Cube with Qi2レビュー｜折りたたみ3in1充電器</title>
+<link>https://ai-benri-lab.github.io/blog/anker_3in1_cube_qi2.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/anker_3in1_cube_qi2.html</guid>
+<category>充電・電源</category>
+<pubDate>Mon, 14 Sep 2026 00:00:00 +0900</pubDate>
+<description>Anker 3-in-1 Cube with Qi2レビュー｜折りたたみ3in1充電器</description>
+</item>
+<item>
+<title>Soundcore AeroClipレビュー｜耳を挟む新型オープンイヤホン</title>
+<link>https://ai-benri-lab.github.io/blog/soundcore_aeroclip.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/soundcore_aeroclip.html</guid>
+<category>映像・音響</category>
+<pubDate>Sun, 13 Sep 2026 00:00:00 +0900</pubDate>
+<description>Soundcore AeroClipレビュー｜耳を挟む新型オープンイヤホン</description>
+</item>
+<item>
+<title>Eufy Video Doorbell Chime 2の特徴と仕様まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_video_doorbell_chime2.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_video_doorbell_chime2.html</guid>
+<category>映像・音響</category>
+<pubDate>Sun, 13 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy Video Doorbell Chime 2の特徴と仕様まとめ</description>
+</item>
+<item>
+<title>Anker PowerBag 2026レビュー｜バッグ型大容量バッテリー</title>
+<link>https://ai-benri-lab.github.io/blog/anker_powerbag_2026.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/anker_powerbag_2026.html</guid>
+<category>充電・電源</category>
+<pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+<description>Anker PowerBag 2026レビュー｜バッグ型大容量バッテリー</description>
+</item>
+<item>
+<title>SwitchBotスマートデイリーステーション徹底解説</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_daily_station.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_daily_station.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotスマートデイリーステーション徹底解説</description>
+</item>
+<item>
+<title>homerunPETスマートペットフィーダー自動給餌器レビュー</title>
+<link>https://ai-benri-lab.github.io/blog/homerunpet_smart_pet_feeder.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/homerunpet_smart_pet_feeder.html</guid>
+<category>ペット</category>
+<pubDate>Fri, 11 Sep 2026 00:00:00 +0900</pubDate>
+<description>homerunPETスマートペットフィーダー自動給餌器レビュー</description>
+</item>
+<item>
+<title>Eufy Video Doorbell E340 徹底解説|来客を顔まで確認できるドアホン</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_video_doorbell_e340.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_video_doorbell_e340.html</guid>
+<category>映像・音響</category>
+<pubDate>Fri, 11 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy Video Doorbell E340 徹底解説|来客を顔まで確認できるドアホン</description>
+</item>
+<item>
+<title>Eufy SmartTrack Card E40の特徴｜カード型紛失防止トラッカー</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_smarttrack_card.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_smarttrack_card.html</guid>
+<category>スマートホーム</category>
+<pubDate>Thu, 10 Sep 2026 00:00:00 +0900</pubDate>
+<description>Eufy SmartTrack Card E40の特徴｜カード型紛失防止トラッカー</description>
+</item>
+<item>
+<title>SwitchBot ボットとは？指を貼るだけでスイッチ自動化</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_bot_finger_robot.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_bot_finger_robot.html</guid>
+<category>スマートホーム</category>
+<pubDate>Thu, 10 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot ボットとは？指を貼るだけでスイッチ自動化</description>
+</item>
+<item>
+<title>SwitchBot スマートテレビドアホン｜留守でも自動応答の後付け玄関</title>
+<link>https://ai-benri-lab.github.io/blog/smart_video_doorbell.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/smart_video_doorbell.html</guid>
+<category>スマートホーム</category>
+<pubDate>Wed, 09 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot スマートテレビドアホン｜留守でも自動応答の後付け玄関</description>
+</item>
+<item>
+<title>Soundcore Rave 3S徹底解説|200W重低音とAIボーカル分離</title>
+<link>https://ai-benri-lab.github.io/blog/soundcore_rave_3s.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/soundcore_rave_3s.html</guid>
+<category>映像・音響</category>
+<pubDate>Wed, 09 Sep 2026 00:00:00 +0900</pubDate>
+<description>Soundcore Rave 3S徹底解説|200W重低音とAIボーカル分離</description>
+</item>
+<item>
+<title>SwitchBotロールスクリーン｜自動で上がる電動遮光スクリーン</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_roller_shade.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_roller_shade.html</guid>
+<category>スマートホーム</category>
+<pubDate>Tue, 08 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotロールスクリーン｜自動で上がる電動遮光スクリーン</description>
+</item>
+<item>
+<title>Anker Nano Power Strip徹底解説|机に挟む10in1電源タップ</title>
+<link>https://ai-benri-lab.github.io/blog/anker_power_strip_clamp.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/anker_power_strip_clamp.html</guid>
+<category>充電・電源</category>
+<pubDate>Tue, 08 Sep 2026 00:00:00 +0900</pubDate>
+<description>Anker Nano Power Strip徹底解説|机に挟む10in1電源タップ</description>
+</item>
+<item>
+<title>AI無人運営レポート08/31〜09/07：再生+4855回、楽天クリックは-76回</title>
+<link>https://ai-benri-lab.github.io/blog/labnote_08310907.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/labnote_08310907.html</guid>
+<category>運営レポート</category>
+<pubDate>Mon, 07 Sep 2026 00:00:00 +0900</pubDate>
+<description>AI無人運営レポート08/31〜09/07：再生+4855回、楽天クリックは-76回</description>
+</item>
+<item>
+<title>homerunPET Dryboペットドライヤーハウスの特徴と仕様まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/pet_dryer_house.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/pet_dryer_house.html</guid>
+<category>ペット</category>
+<pubDate>Mon, 07 Sep 2026 00:00:00 +0900</pubDate>
+<description>homerunPET Dryboペットドライヤーハウスの特徴と仕様まとめ</description>
+</item>
+<item>
+<title>Nebula Capsule Air レビュー｜缶サイズで最大100インチ投影</title>
+<link>https://ai-benri-lab.github.io/blog/nebula_capsule_air.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/nebula_capsule_air.html</guid>
+<category>映像・音響</category>
+<pubDate>Mon, 07 Sep 2026 00:00:00 +0900</pubDate>
+<description>Nebula Capsule Air レビュー｜缶サイズで最大100インチ投影</description>
+</item>
+<item>
+<title>SwitchBotスマートトラッカーカードの特徴と仕様まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_smart_tracker_card.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_smart_tracker_card.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBotスマートトラッカーカードの特徴と仕様まとめ</description>
+</item>
+<item>
+<title>Drybo Pro 全自動ペットドライヤーハウスの特徴と仕様</title>
+<link>https://ai-benri-lab.github.io/blog/homerunpet_drybo_pet_dryer_house.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/homerunpet_drybo_pet_dryer_house.html</guid>
+<category>ペット</category>
+<pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+<description>Drybo Pro 全自動ペットドライヤーハウスの特徴と仕様</description>
+</item>
+<item>
+<title>SwitchBot AIマインドクリップとは｜文字起こし要約AIレコーダー</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_ai_mind_clip.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_ai_mind_clip.html</guid>
+<category>その他</category>
+<pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot AIマインドクリップとは｜文字起こし要約AIレコーダー</description>
+</item>
+<item>
+<title>homerunPETペットブロワーとは｜43dB静音のペット送風機</title>
+<link>https://ai-benri-lab.github.io/blog/pet_blower.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/pet_blower.html</guid>
+<category>ペット</category>
+<pubDate>Sun, 06 Sep 2026 00:00:00 +0900</pubDate>
+<description>homerunPETペットブロワーとは｜43dB静音のペット送風機</description>
+</item>
 <item>
 <title>soundcore_c50i_eevee徹底解説|耳を塞がないイーブイ柄イヤホン</title>
 <link>https://ai-benri-lab.github.io/blog/soundcore_c50i_eevee.html</link>
