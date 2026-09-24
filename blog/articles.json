@@ -720,5 +720,27 @@
   "rakuten": "https://a.r10.to/hg9Uaf",
   "official": "https://www.switchbot.jp/products/switchbot-water-leak-detector",
   "price": null
+ },
+ "switchbot_rgbic_floor_light": {
+  "slug": "switchbot_rgbic_floor_light",
+  "title": "SwitchBot RGBICフロアライトで音楽連動照明を実現",
+  "product": "SwitchBot RGBICフロアライト",
+  "date": "2026-09-24",
+  "category": "照明",
+  "youtube": "-L25dDosTC8",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Frgbicww-floorlamp%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-rgbicww-floor-lamp",
+  "price": null
+ },
+ "switchbot_co2_sensor": {
+  "slug": "switchbot_co2_sensor",
+  "title": "SwitchBot CO2センサー（温湿度計）で室内の空気を数値化",
+  "product": "SwitchBot CO2センサー（温湿度計）",
+  "date": "2026-09-24",
+  "category": "スマートホーム",
+  "youtube": "IgWks8Emt6s",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-co2-meter",
+  "price": null
  }
 }
