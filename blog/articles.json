@@ -742,5 +742,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010928%2F",
   "official": "https://www.switchbot.jp/products/switchbot-co2-meter",
   "price": null
+ },
+ "anker_prime_power_bank_300w": {
+  "slug": "anker_prime_power_bank_300w",
+  "title": "Anker Prime Power Bank 300Wで急速充電",
+  "product": "Anker Prime Power Bank (26250mAh, 300W)",
+  "date": "2026-09-25",
+  "category": "充電・電源",
+  "youtube": "eQXNgN-lcbw",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa110a%2F",
+  "official": "https://www.ankerjapan.com/products/a110a",
+  "price": null
  }
 }
