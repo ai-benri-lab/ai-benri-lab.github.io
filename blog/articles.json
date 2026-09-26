@@ -764,5 +764,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft814x%2F",
   "official": "https://www.ankerjapan.com/products/t814x32s",
   "price": null
+ },
+ "switchbot_contact_sensor": {
+  "slug": "switchbot_contact_sensor",
+  "title": "SwitchBot開閉センサーの機能と設置方法を解説",
+  "product": "SwitchBot 開閉センサー",
+  "date": "2026-09-26",
+  "category": "スマートホーム",
+  "youtube": "A71Dv36sK4k",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrend-tech%2F0850007706425%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-contact-sensor",
+  "price": null
  }
 }
