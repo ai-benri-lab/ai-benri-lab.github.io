@@ -862,5 +862,16 @@
   "rakuten": "https://a.r10.to/hPXU2L",
   "official": "https://www.switchbot.jp/products/homerunpet-airbo-d1",
   "price": null
+ },
+ "switchbot_water_leak_guard_set": {
+  "slug": "switchbot_water_leak_guard_set",
+  "title": "SwitchBot 水安心ガードセット｜水漏れを即通知",
+  "product": "SwitchBot 水安心ガードセット",
+  "date": "2026-09-30",
+  "category": "スマートホーム",
+  "youtube": "kfzCntKHouY",
+  "rakuten": "https://a.r10.to/hPr8yQ",
+  "official": "https://www.switchbot.jp/products/water-leak-sensor-plug-combo",
+  "price": null
  }
 }
