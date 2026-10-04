@@ -54,17 +54,24 @@ def main(dry: bool = False) -> int:
         seen[it["slug"]] = seen.get(it["slug"], 0) + 1
     items = {it["slug"]: it for it in cfg.get("items", []) if seen[it["slug"]] == 1}
 
-    added = changed = 0
+    added = changed = removed = 0
     for f in sorted(BLOG.glob("*.html")):
         slug = f.stem
         it = items.get(slug)
         if it is None:
             continue
         want = wanted_url(it)
-        if not want:
-            continue
         s = f.read_text(encoding="utf-8")
         m = CTA_RE.search(s)
+        if not want:
+            # queue からリンクが消えた＝別商品を指していたので外した商品。
+            # 記事に残したままだと、紹介した商品と違うページへ送り続けることになる。
+            if m:
+                if not dry:
+                    f.write_text(s[:m.start()] + s[m.end():], encoding="utf-8")
+                removed += 1
+                print(f"  {slug}: 誤リンクのボタンを外す")
+            continue
         if m:
             if html.unescape(m.group(1)) == want:
                 continue
@@ -82,7 +89,7 @@ def main(dry: bool = False) -> int:
         print(f"  {slug}: {what} -> {want[:72]}")
         if not dry:
             f.write_text(new, encoding="utf-8")
-    print(f"{'(dry) ' if dry else ''}リンク追加 {added} 本 / 貼り替え {changed} 本")
+    print(f"{'(dry) ' if dry else ''}リンク追加 {added} 本 / 貼り替え {changed} 本 / 撤去 {removed} 本")
     return 0
 
 
