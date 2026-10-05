@@ -905,5 +905,16 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "switchbot_floor_light": {
+  "slug": "switchbot_floor_light",
+  "title": "SwitchBot フロアライトとは｜1600万色スマート間接照明の仕様解説",
+  "product": "SwitchBot フロアライト",
+  "date": "2026-10-05",
+  "category": "照明",
+  "youtube": "aPjhharKblM",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Ffloorlamp%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-floor-lamp",
+  "price": null
  }
 }
