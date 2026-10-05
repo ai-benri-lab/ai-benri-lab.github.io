@@ -916,5 +916,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Ffloorlamp%2F",
   "official": "https://www.switchbot.jp/products/switchbot-floor-lamp",
   "price": null
+ },
+ "switchbot_exterior_light": {
+  "slug": "switchbot_exterior_light",
+  "title": "SwitchBotエクステリアライトとは｜人感センサーで自動点灯",
+  "product": "SwitchBot エクステリアライト",
+  "date": "2026-10-05",
+  "category": "照明",
+  "youtube": "iIWOgL1r37s",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fpermanent-outdoor-light%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-permanent-outdoor-lights",
+  "price": null
  }
 }
