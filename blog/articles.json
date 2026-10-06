@@ -927,5 +927,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fpermanent-outdoor-light%2F",
   "official": "https://www.switchbot.jp/products/switchbot-permanent-outdoor-lights",
   "price": null
+ },
+ "switchbot_contact_sensor_set": {
+  "slug": "switchbot_contact_sensor_set",
+  "title": "SwitchBot開閉センサーセットでドア開閉を即通知",
+  "product": "SwitchBot 開閉センサーセット",
+  "date": "2026-10-06",
+  "category": "スマートホーム",
+  "youtube": "CGLmIlMkPeQ",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000030%2F",
+  "official": "https://www.switchbot.jp/products/set-contectsensor",
+  "price": null
  }
 }
