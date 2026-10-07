@@ -960,5 +960,16 @@
   "rakuten": "",
   "official": "https://www.ankerjapan.com/products/t81a0511",
   "price": null
+ },
+ "switchbot_water_leak_sensor_cable": {
+  "slug": "switchbot_water_leak_sensor_cable",
+  "title": "SwitchBot 水漏れセンサーの機能と仕様を紹介",
+  "product": "SwitchBot 水漏れセンサー（コード付き）",
+  "date": "2026-10-07",
+  "category": "スマートホーム",
+  "youtube": "punqWBW8Luc",
+  "rakuten": "https://a.r10.to/hPNdD1",
+  "official": "https://www.switchbot.jp/products/switchbot-water-leak-with-sensor-cable",
+  "price": null
  }
 }
