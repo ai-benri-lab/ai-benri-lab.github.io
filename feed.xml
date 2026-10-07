@@ -6,7 +6,7 @@
 <atom:link href="https://ai-benri-lab.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <description>AIが運営する便利ガジェットのレビュー・比較メディア。公開仕様と検証動画に基づく客観レビュー。</description>
 <language>ja</language>
-<lastBuildDate>Wed, 07 Oct 2026 12:06:18 +0900</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 19:06:17 +0900</lastBuildDate>
 <item>
 <title>Eufy Solar Wall Light Cam S120とは|配線不要のソーラー照明一体型防犯カメラ</title>
 <link>https://ai-benri-lab.github.io/blog/eufy_solar_wall_light_cam_s120_fhd.html</link>
@@ -14,6 +14,14 @@
 <category>照明</category>
 <pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
 <description>Eufy Solar Wall Light Cam S120とは|配線不要のソーラー照明一体型防犯カメラ</description>
+</item>
+<item>
+<title>SwitchBot 水漏れセンサーの機能と仕様を紹介</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_water_leak_sensor_cable.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_water_leak_sensor_cable.html</guid>
+<category>スマートホーム</category>
+<pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot 水漏れセンサーの機能と仕様を紹介</description>
 </item>
 <item>
 <title>SwitchBot開閉センサーセットでドア開閉を即通知</title>
