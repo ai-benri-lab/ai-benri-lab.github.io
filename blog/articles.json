@@ -971,5 +971,16 @@
   "rakuten": "https://a.r10.to/hPNdD1",
   "official": "https://www.switchbot.jp/products/switchbot-water-leak-with-sensor-cable",
   "price": null
+ },
+ "switchbot_rgbic_neon_wire_light": {
+  "slug": "switchbot_rgbic_neon_wire_light",
+  "title": "SwitchBot RGBICワイヤーネオンライトの特徴と仕様",
+  "product": "SwitchBot RGBICワイヤーネオンライト",
+  "date": "2026-10-08",
+  "category": "照明",
+  "youtube": "Ocz3NPI5XcY",
+  "rakuten": "https://a.r10.to/hPDVRK",
+  "official": "https://www.switchbot.jp/products/switchbot-rgbic-neon-wire-rope-light",
+  "price": null
  }
 }
