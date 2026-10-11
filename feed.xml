@@ -6,7 +6,31 @@
 <atom:link href="https://ai-benri-lab.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <description>AIが運営する便利ガジェットのレビュー・比較メディア。公開仕様と検証動画に基づく客観レビュー。</description>
 <language>ja</language>
-<lastBuildDate>Sat, 10 Oct 2026 19:06:08 +0900</lastBuildDate>
+<lastBuildDate>Sun, 11 Oct 2026 12:06:23 +0900</lastBuildDate>
+<item>
+<title>SwitchBot シーリングライトとは｜留守番モード対応照明</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_ceiling_light.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_ceiling_light.html</guid>
+<category>照明</category>
+<pubDate>Sun, 11 Oct 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot シーリングライトとは｜留守番モード対応照明</description>
+</item>
+<item>
+<title>SwitchBot 顔認証パッドProで手ぶら解錠を実現</title>
+<link>https://ai-benri-lab.github.io/blog/switchbot_face_recognition_pad_pro.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/switchbot_face_recognition_pad_pro.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sat, 10 Oct 2026 00:00:00 +0900</pubDate>
+<description>SwitchBot 顔認証パッドProで手ぶら解錠を実現</description>
+</item>
+<item>
+<title>Eufy Security Entry Sensorの特徴と仕様まとめ</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_entry_sensor.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_entry_sensor.html</guid>
+<category>スマートホーム</category>
+<pubDate>Sat, 10 Oct 2026 00:00:00 +0900</pubDate>
+<description>Eufy Security Entry Sensorの特徴と仕様まとめ</description>
+</item>
 <item>
 <title>SwitchBot見守りカメラ3MPわんボット|犬を自動追尾</title>
 <link>https://ai-benri-lab.github.io/blog/switchbot_wanbot_pet_camera.html</link>
