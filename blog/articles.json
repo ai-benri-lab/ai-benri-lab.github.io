@@ -1037,5 +1037,16 @@
   "rakuten": "https://a.r10.to/hgXDiB",
   "official": "https://www.ankerjapan.com/products/t8900",
   "price": null
+ },
+ "switchbot_ceiling_light": {
+  "slug": "switchbot_ceiling_light",
+  "title": "SwitchBot シーリングライトとは｜留守番モード対応照明",
+  "product": "SwitchBot シーリングライト",
+  "date": "2026-10-11",
+  "category": "照明",
+  "youtube": "sR8j8pXPcV4",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000020%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-ceiling-light",
+  "price": null
  }
 }
