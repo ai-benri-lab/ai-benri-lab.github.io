@@ -1015,5 +1015,27 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa83b5%2F",
   "official": "https://www.ankerjapan.com/products/a83b5",
   "price": null
+ },
+ "switchbot_face_recognition_pad_pro": {
+  "slug": "switchbot_face_recognition_pad_pro",
+  "title": "SwitchBot 顔認証パッドProで手ぶら解錠を実現",
+  "product": "SwitchBot 顔認証パッドPro",
+  "date": "2026-10-10",
+  "category": "スマートホーム",
+  "youtube": "2HdPlyUepDE",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fkeypadvision-pro%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-keypad-vision-pro",
+  "price": null
+ },
+ "eufy_entry_sensor": {
+  "slug": "eufy_entry_sensor",
+  "title": "Eufy Security Entry Sensorの特徴と仕様まとめ",
+  "product": "Eufy Security Entry Sensor",
+  "date": "2026-10-10",
+  "category": "スマートホーム",
+  "youtube": "L0MOK-pOPGU",
+  "rakuten": "https://a.r10.to/hgXDiB",
+  "official": "https://www.ankerjapan.com/products/t8900",
+  "price": null
  }
 }
