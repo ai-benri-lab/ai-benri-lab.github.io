@@ -1058,5 +1058,16 @@
   "youtube": "",
   "rakuten": "",
   "official": ""
+ },
+ "switchbot_monitor_cam_5mp": {
+  "slug": "switchbot_monitor_cam_5mp",
+  "title": "SwitchBot 見守りカメラPlus 5MPで留守中のペットを見守る",
+  "product": "SwitchBot 見守りカメラPlus  5MP",
+  "date": "2026-10-12",
+  "category": "ペット",
+  "youtube": "0WSL-AmC960",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010911%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-pan-tilt-cam-plus-5mp",
+  "price": null
  }
 }
