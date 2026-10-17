@@ -6,7 +6,15 @@
 <atom:link href="https://ai-benri-lab.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <description>AIが運営する便利ガジェットのレビュー・比較メディア。公開仕様と検証動画に基づく客観レビュー。</description>
 <language>ja</language>
-<lastBuildDate>Fri, 16 Oct 2026 19:06:31 +0900</lastBuildDate>
+<lastBuildDate>Sat, 17 Oct 2026 12:06:29 +0900</lastBuildDate>
+<item>
+<title>Eufy RoboVac L35 Hybridで実現するゴミ捨て全自動の床掃除</title>
+<link>https://ai-benri-lab.github.io/blog/eufy_robovac_l35_auto_empty.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/eufy_robovac_l35_auto_empty.html</guid>
+<category>掃除・家事</category>
+<pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate>
+<description>Eufy RoboVac L35 Hybridで実現するゴミ捨て全自動の床掃除</description>
+</item>
 <item>
 <title>Soundcore Boom 3iとは？水に浮いて光る防水スピーカー</title>
 <link>https://ai-benri-lab.github.io/blog/soundcore_boom_3i.html</link>
