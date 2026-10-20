@@ -1255,5 +1255,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft8110%2F",
   "official": "https://www.ankerjapan.com/products/e8110",
   "price": null
+ },
+ "switchbot_rgbic_strip_light": {
+  "slug": "switchbot_rgbic_strip_light",
+  "title": "SwitchBot RGBICテープライトの特徴と仕様まとめ",
+  "product": "SwitchBot RGBICテープライト",
+  "date": "2026-10-20",
+  "category": "照明",
+  "youtube": "-ldkJkKyyuo",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Frgbicww-striplight%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-rgbicww-strip-light",
+  "price": null
  }
 }
