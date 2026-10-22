@@ -1288,5 +1288,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmypita%2Fa3133n61%2F",
   "official": "https://www.ankerjapan.com/products/a3135012",
   "price": null
+ },
+ "switchbot_gan_65w_charger": {
+  "slug": "switchbot_gan_65w_charger",
+  "title": "SwitchBot GaN 65W急速充電器の仕様と特徴",
+  "product": "SwitchBot GaN 65W 急速充電器",
+  "date": "2026-10-22",
+  "category": "充電・電源",
+  "youtube": "wu4LG7rgeh8",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F1000010940%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-65ｗ-gan-charger",
+  "price": null
  }
 }
