@@ -1321,5 +1321,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft8173%2F",
   "official": "https://www.ankerjapan.com/products/t8171",
   "price": null
+ },
+ "switchbot_fingerprint_pad": {
+  "slug": "switchbot_fingerprint_pad",
+  "title": "SwitchBot 指紋認証パッドとは|工事不要で玄関を解錠",
+  "product": "SwitchBot 指紋認証パッド",
+  "date": "2026-10-23",
+  "category": "スマートホーム",
+  "youtube": "GhidujWDuWo",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000003%2F",
+  "official": "https://www.switchbot.jp/products/switchbot-keypad-touch",
+  "price": null
  }
 }
