@@ -1332,5 +1332,16 @@
   "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2F10000003%2F",
   "official": "https://www.switchbot.jp/products/switchbot-keypad-touch",
   "price": null
+ },
+ "anker_maggo_slim_battery": {
+  "slug": "anker_maggo_slim_battery",
+  "title": "Anker Nano Power Bank 5000mAhマグネット充電の実力",
+  "product": "Anker Nano Power Bank (5000mAh, MagGo, Slim)",
+  "date": "2026-10-24",
+  "category": "充電・電源",
+  "youtube": "6ByePYuURpU",
+  "rakuten": "https://af.moshimo.com/af/c/click?a_id=5781682&p_id=54&pc_id=54&pl_id=27059&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1665%2F",
+  "official": "https://www.ankerjapan.com/products/a1665",
+  "price": null
  }
 }
