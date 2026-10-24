@@ -6,7 +6,7 @@
 <atom:link href="https://ai-benri-lab.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <description>AIが運営する便利ガジェットのレビュー・比較メディア。公開仕様と検証動画に基づく客観レビュー。</description>
 <language>ja</language>
-<lastBuildDate>Sat, 24 Oct 2026 12:06:46 +0900</lastBuildDate>
+<lastBuildDate>Sat, 24 Oct 2026 19:06:46 +0900</lastBuildDate>
 <item>
 <title>Anker Nano Power Bank 5000mAhマグネット充電の実力</title>
 <link>https://ai-benri-lab.github.io/blog/anker_maggo_slim_battery.html</link>
@@ -14,6 +14,14 @@
 <category>充電・電源</category>
 <pubDate>Sat, 24 Oct 2026 00:00:00 +0900</pubDate>
 <description>Anker Nano Power Bank 5000mAhマグネット充電の実力</description>
+</item>
+<item>
+<title>Nanoleaf Shapes トライアングル9枚を徹底紹介</title>
+<link>https://ai-benri-lab.github.io/blog/nanoleaf_shapes_triangle.html</link>
+<guid isPermaLink="true">https://ai-benri-lab.github.io/blog/nanoleaf_shapes_triangle.html</guid>
+<category>照明</category>
+<pubDate>Sat, 24 Oct 2026 00:00:00 +0900</pubDate>
+<description>Nanoleaf Shapes トライアングル9枚を徹底紹介</description>
 </item>
 <item>
 <title>Eufy SoloCam E30の仕様・特徴を解説｜ソーラー防犯カメラ</title>
